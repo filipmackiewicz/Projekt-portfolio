@@ -1,0 +1,15 @@
+.l-bg {
+    padding: 0;
+    background-image: url('/assets/img/ziomek-compress.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 30% 50%;
+
+
+
+    @include break (tablet) {
+        padding-left: 18.125rem;
+        padding-right: 18.125rem;
+        padding-top: 5rem;
+    }
+}
