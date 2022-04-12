@@ -133,7 +133,7 @@ body {
 }
 
 .l-bg {
-  padding: 0;
+  padding: 50px;
   background-image: url("/assets/img/ziomek-compress.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -261,7 +261,7 @@ body {
 }
 
 .c-hamburger__menu.show {
-  left: calc(100% - 20%);
+  left: calc(100% - 400px);
 }
 
 .c-hamburger__menu {
