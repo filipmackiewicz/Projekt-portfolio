@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Oliviar Sans";
+    src: url("/assets/font/OliviarSans\ Regular.otf");
+}
+
+@font-face {
+    font-family: "Oliviar Sans";
+    src: url("/assets/font/OliviarSans\ Black.otf");
+}
+
+@font-face {
+    font-family: "Oliviar Sans";
+    src: url("/assets/font/OliviarSans\ Bold.otf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Oliviar Sans";
+    src: url("/assets/font/OliviarSans\ SemiBold.otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Oliviar Sans";
+    src: url("/assets/font/OliviarSans\ Regular.otf");
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'fm-icon';
+    src: url('/assets/font-icon/fm-icon.eot?d1rojn');
+    src: url('/assets/font-icon/fm-icon.eot?d1rojn#iefix') format('embedded-opentype'),
+        url('/assets/font-icon/fm-icon.ttf?d1rojn') format('truetype'),
+        url('/assets/font-icon/fm-icon.woff?d1rojn') format('woff'),
+        url('/assets/font-icon/fm-icon.svg?d1rojn#fm-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'fm-icon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu-3-line:before {
+    content: "\e900";
+}
+
+.icon-arrow-left:before {
+    content: "\e901";
+}
+
+.icon-arrow-right:before {
+    content: "\e902";
+}
+
+.icon-arrow-top:before {
+    content: "\e903";
+}
+
+.icon-arrow-down-skill:before {
+    content: "\e904";
+}
+
+.icon-arrow-top-skill:before {
+    content: "\e905";
+}
+
+.icon-zoom-in:before {
+    content: "\e906";
+}
+
+.icon-code:before {
+    content: "\e907";
+}
+
+.icon-social-facebook-circular:before {
+    content: "\e908";
+}
+
+.icon-social-github-circular:before {
+    content: "\e909";
+}
+
+.icon-social-linkedin-circular:before {
+    content: "\e90a";
+}
+
+.icon-social-twitter-circular:before {
+    content: "\e90b";
+}
