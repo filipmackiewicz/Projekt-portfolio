@@ -1,0 +1,102 @@
+.c-hamburger {
+    background: transparent;
+    border: none;
+    width: 25.5px;
+    position: relative;
+    cursor: pointer;
+
+    &__text{
+        color: $menu_color;
+        position: absolute;
+        top: 130%;
+        left: -12px;
+        font-family: $semibold_font_family;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    &__bar1, &__bar3 {
+        background: $menu_color;
+        transition: all .1s ease-in;
+        width: 100%;
+        margin-top: 6px;
+        height: 0.125rem;
+        display: block;
+        float: right;
+    }
+
+    &__bar2 {
+        background: $menu_color;
+        transition: all .1s ease-in;
+        width: 60%;
+        margin-top: 6px;
+        height: 0.125rem;
+        display: block;
+        float: right;
+    }
+
+    &__bar3.animate {
+        top: 0;
+        transform: rotate(45deg);
+        transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+        position: absolute;
+    }
+
+    &__bar1.animate {
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    &__bar2.animate {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    &__hide {
+        left: 100%;
+    }
+
+    &__menu.show {
+        left: calc(100% - 20%);
+    }
+
+    &__menu {
+        background: #24439A;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        transition: all .2s ease-in;
+        z-index: -1;
+
+        ul {
+            position: relative;
+            top: 37%;
+            transform: translateY(-50%);
+            list-style: none;
+            padding: 0px 80px 0px 80px;
+        }
+
+        a {
+            text-align: center;
+            font-size: 43px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #2980b9;
+        }
+    }
+
+    &__menu.show a {
+        text-align: center;
+        font-size: 43px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+
+.c-hamburger:hover .c-hamburger__bar2 {
+        width:100%;
+}

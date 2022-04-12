@@ -1,3 +1,4 @@
+//breakpoints
 $breakpoints: (smartphone-small: (min-width: 320px),
     smartphone-medium: (min-width: 425px),
     smartphone: (min-width: 460px),
@@ -8,3 +9,18 @@ $breakpoints: (smartphone-small: (min-width: 320px),
     desktop-medium: (min-width: 1600px),
     desktop-large: (min-width: 1900px),
 );
+
+//fonts
+$regular_font_family: "OliviarRegular";
+$bold_font_family: "OliviarBold";
+$light_font_family: "OliviarLight";
+$semibold_font_family: "OliviarSemiBold";
+$black_font_family: "OliviarBlack";
+$light_font_family: "OliviarLight";
+
+//colors
+$red_color: #CB4335;
+$blue_color: #2C55C8;
+$primary_text_color: #E6E5DF;
+$secondary_text_color: #B4B3B1;
+$menu_color: #E6E5DF;

@@ -9,7 +9,6 @@
         cursor: pointer;
     }
 
-
     &__logo:before {
         content: "";
         position: absolute;
@@ -27,62 +26,5 @@
 
     &__logo:hover::before {
         transform: rotate(-180deg);
-    }
-
-    &__hamburgerText {
-        transform: rotate(-180deg);
-        color: #fff;
-        margin-top: -14px;
-        margin-left: 32px;
-        text-transform: uppercase;
-    }
-    
-    // &__hamburger:hover {
-    //     :nth-child(1) {
-    //         width: 1.594rem;
-    //     }
-    // }
-
-    &__hide {
-        left: 100%;
-    }
-
-    &__menu.show {
-        left: 80%;
-    }
-
-    &__menu {
-        background: #24439A;
-        position: absolute;
-        top: 0;
-        height: 100vh;
-        transition: all .2s ease-in;
-
-        ul {
-            position: relative;
-            top: 37%;
-            transform: translateY(-50%);
-            list-style: none;
-            padding: 0px 80px 0px 80px;
-        }
-
-        a {
-            text-align: center;
-            font-size: 43px;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            color: #2980b9;
-        }
-    }
-
-    &__menu.show a {
-        text-align: center;
-        font-size: 43px;
-        color: #ffffff;
-        text-decoration: none;
     }
 }

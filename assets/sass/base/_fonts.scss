@@ -1,30 +1,38 @@
 @font-face {
-    font-family: "Oliviar Sans";
-    src: url("/assets/font/OliviarSans\ Regular.otf");
+    src: url("/assets/fonts/OliviarSans\ Regular.otf");
+    font-family: "OliviarRegular";
 }
 
 @font-face {
-    font-family: "Oliviar Sans";
-    src: url("/assets/font/OliviarSans\ Black.otf");
+    src: url("/assets/fonts/OliviarSans\ Bold.otf");
+    font-family: "OliviarBold";
 }
 
 @font-face {
-    font-family: "Oliviar Sans";
-    src: url("/assets/font/OliviarSans\ Bold.otf");
-    font-weight: 800;
+    src: url("/assets/fonts/OliviarSans\ Black.otf");
+    font-family: "OliviarBlack";
 }
 
 @font-face {
-    font-family: "Oliviar Sans";
-    src: url("/assets/font/OliviarSans\ SemiBold.otf");
-    font-weight: 500;
+    src: url("/assets/fonts/OliviarSans\ Light.otf");
+    font-family: "OliviarLight";
 }
 
 @font-face {
-    font-family: "Oliviar Sans";
-    src: url("/assets/font/OliviarSans\ Regular.otf");
-    font-weight: normal;
+    src: url("/assets/fonts/OliviarSans\ SemiBold.otf");
+    font-family: "OliviarSemiBold";
 }
+
+@font-face {
+    src: url("/assets/fonts/OliviarSans\ Thin.otf");
+    font-family: "OliviarThin";
+}
+
+@font-face {
+    src: url("/assets/fonts/OliviarSans\ UltraLight.otf");
+    font-family: "OliviarUltraLight";
+}
+
 
 
 @font-face {
