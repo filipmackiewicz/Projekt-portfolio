@@ -9,7 +9,7 @@
         color: $menu_color;
         position: absolute;
         top: 130%;
-        left: -12px;
+        left: -9px;
         font-family: $semibold_font_family;
         font-size: 14px;
         text-transform: uppercase;
@@ -70,33 +70,70 @@
 
         ul {
             position: relative;
-            top: 37%;
+            top: 50%;
             transform: translateY(-50%);
             list-style: none;
-            padding: 0px 80px 0px 80px;
+            padding: 0px 30px 0px 30px;
         }
 
         a {
             text-align: center;
-            font-size: 43px;
+            font-size: 36px;
             color: #ffffff;
             text-decoration: none;
-            font-weight: bold;
+            // font-weight: bold;
+            font-family: $regular_font_family;
         }
-
-        a:hover {
-            color: #2980b9;
-        }
-    }
-
-    &__menu.show a {
-        text-align: center;
-        font-size: 43px;
-        color: #ffffff;
-        text-decoration: none;
     }
 }
 
 .c-hamburger:hover .c-hamburger__bar2 {
         width:100%;
 }
+
+.menu {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 0;
+
+    &__item {
+        display: inline-block;
+        white-space: nowrap;
+      
+        &:last-child .menu__link {
+          border-right: 0;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 6px 30px 3px;
+      
+        &:hover,
+        &:focus {
+          .menu__word {
+            transform: translate3d(0, -105%, 0);
+          }
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    &__word {
+        display: inline-block;
+        position: relative;
+        transition: transform .3s;
+        color: #fff;
+      
+        &::before {
+          position: absolute;
+          content: attr(data-hover);
+          top: 105%;
+          color: #546BAB;
+        }
+    }
+  }
+  
