@@ -72,51 +72,51 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-menu-3-line:before {
+.icon-menu-3-line::before {
   content: "\e900";
 }
 
-.icon-arrow-left:before {
+.icon-arrow-left::before {
   content: "\e901";
 }
 
-.icon-arrow-right:before {
+.icon-arrow-right::before {
   content: "\e902";
 }
 
-.icon-arrow-top:before {
+.icon-arrow-top::before {
   content: "\e903";
 }
 
-.icon-arrow-down-skill:before {
+.icon-arrow-down-skill::before {
   content: "\e904";
 }
 
-.icon-arrow-top-skill:before {
+.icon-arrow-top-skill::before {
   content: "\e905";
 }
 
-.icon-zoom-in:before {
+.icon-zoom-in::before {
   content: "\e906";
 }
 
-.icon-code:before {
+.icon-code::before {
   content: "\e907";
 }
 
-.icon-social-facebook-circular:before {
+.icon-social-facebook-circular::before {
   content: "\e908";
 }
 
-.icon-social-github-circular:before {
+.icon-social-github-circular::before {
   content: "\e909";
 }
 
-.icon-social-linkedin-circular:before {
+.icon-social-linkedin-circular::before {
   content: "\e90a";
 }
 
-.icon-social-twitter-circular:before {
+.icon-social-twitter-circular::before {
   content: "\e90b";
 }
 
