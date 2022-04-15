@@ -18,7 +18,7 @@
         padding: 6px 30px 3px;
         text-align: center;
         font-size: 36px;
-        color: #ffffff;
+        color: $white-color;
         text-decoration: none;
         font-family: $regular_font_family;
       
@@ -39,13 +39,13 @@
         display: inline-block;
         position: relative;
         transition: transform .3s;
-        color: #fff;
+        color: $white-color;
       
         &::before {
           position: absolute;
           content: attr(data-hover);
           top: 105%;
-          color: #546BAB;
+          color: $link-hover-color;
         }
     }
 }

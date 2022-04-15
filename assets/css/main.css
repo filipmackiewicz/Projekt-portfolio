@@ -17,38 +17,38 @@ body {
 }
 
 @font-face {
-  src: url("/assets/fonts/OliviarSans Regular.otf");
+  src: url("/assets/fonts/oliviar-sans-regular.otf");
   font-family: "OliviarRegular";
 }
 
 @font-face {
-  src: url("/assets/fonts/OliviarSans Bold.otf");
-  font-family: "OliviarBold";
+  src: url("/assets/fonts/oliviar-sans-bold.otf");
+  font-family: "oliviar-bold";
 }
 
 @font-face {
-  src: url("/assets/fonts/OliviarSans Black.otf");
-  font-family: "OliviarBlack";
+  src: url("/assets/fonts/oliviar-sans-black.otf");
+  font-family: "oliviar-black";
 }
 
 @font-face {
-  src: url("/assets/fonts/OliviarSans Light.otf");
-  font-family: "OliviarLight";
+  src: url("/assets/fonts/oliviar-sans-light.otf");
+  font-family: "oliviar-light";
 }
 
 @font-face {
-  src: url("/assets/fonts/OliviarSans SemiBold.otf");
-  font-family: "OliviarSemiBold";
+  src: url("/assets/fonts/oliviar-sans-semibold.otf");
+  font-family: "oliviar-semi-bold";
 }
 
 @font-face {
-  src: url("/assets/fonts/OliviarSans Thin.otf");
-  font-family: "OliviarThin";
+  src: url("/assets/fonts/oliviar-sans-thin.otf");
+  font-family: "oliviar-thin";
 }
 
 @font-face {
-  src: url("/assets/fonts/OliviarSans UltraLight.otf");
-  font-family: "OliviarUltraLight";
+  src: url("/assets/fonts/oliviar-sans-ultralight.otf");
+  font-family: "oliviar-ultra-light";
 }
 
 @font-face {
@@ -62,7 +62,7 @@ body {
 
 [class^="icon-"],
 [class*=" icon-"] {
-  font-family: 'fm-icon' !important;
+  font-family: 'fm-icon';
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -204,7 +204,7 @@ body {
   position: absolute;
   top: 130%;
   left: -9px;
-  font-family: "OliviarSemiBold";
+  font-family: "oliviar-semi-bold";
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -261,7 +261,7 @@ body {
 }
 
 .c-links {
-  background: #24439A;
+  background: #2C55C8;
   position: absolute;
   top: 0;
   height: 100vh;
@@ -302,7 +302,7 @@ body {
   font-size: 36px;
   color: #ffffff;
   text-decoration: none;
-  font-family: "OliviarRegular";
+  font-family: "oliviar-regular";
 }
 
 .c-menu__link:hover .c-menu__word, .c-menu__link:focus .c-menu__word {
@@ -322,7 +322,7 @@ body {
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
-  color: #fff;
+  color: #ffffff;
 }
 
 .c-menu__word::before {

@@ -6,17 +6,17 @@
     cursor: pointer;
 
     &__text{
-        color: $menu_color;
+        color: $menu-color;
         position: absolute;
         top: 130%;
         left: -9px;
-        font-family: $semibold_font_family;
+        font-family: $semibold-font-family;
         font-size: 14px;
         text-transform: uppercase;
     }
 
     &__bar1, &__bar3 {
-        background: $menu_color;
+        background: $menu-color;
         transition: all .1s ease-in;
         width: 100%;
         margin-top: 6px;
@@ -26,7 +26,7 @@
     }
 
     &__bar2 {
-        background: $menu_color;
+        background: $menu-color;
         transition: all .1s ease-in;
         width: 60%;
         margin-top: 6px;
