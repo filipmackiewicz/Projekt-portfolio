@@ -8,6 +8,6 @@
     }
 
     @else {
-        @error '"#{$breakpoint}" - Brak podanej wartości!';
+        @error '"#{$breakpoint}" - No value provided!';
     }
 }
