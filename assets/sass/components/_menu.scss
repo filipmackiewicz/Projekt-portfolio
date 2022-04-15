@@ -1,0 +1,51 @@
+.c-menu {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    list-style: none;
+    padding: 0px 30px 0px 30px;
+
+    &__item {
+        display: inline-block;
+        white-space: nowrap;
+    }
+
+    &__link {
+        display: block;
+        padding: 6px 30px 3px;
+        text-align: center;
+        font-size: 36px;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: $regular_font_family;
+      
+        &:hover,
+        &:focus {
+          .c-menu__word {
+            transform: translate3d(0, -105%, 0);
+          }
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    &__word {
+        display: inline-block;
+        position: relative;
+        transition: transform .3s;
+        color: #fff;
+      
+        &::before {
+          position: absolute;
+          content: attr(data-hover);
+          top: 105%;
+          color: #546BAB;
+        }
+    }
+}

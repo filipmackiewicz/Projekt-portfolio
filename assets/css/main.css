@@ -256,15 +256,11 @@ body {
   background: rgba(255, 255, 255, 0);
 }
 
-.c-hamburger__hide {
-  left: 100%;
+.c-hamburger:hover .c-hamburger__bar2 {
+  width: 100%;
 }
 
-.c-hamburger__menu.show {
-  left: calc(100% - 400px);
-}
-
-.c-hamburger__menu {
+.c-links {
   background: #24439A;
   position: absolute;
   top: 0;
@@ -272,10 +268,20 @@ body {
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
   z-index: -1;
-  opacity: 1 !important;
 }
 
-.c-hamburger__menu ul {
+.c-links__hide {
+  left: 100%;
+}
+
+.c-links.show {
+  left: calc(100% - 400px);
+}
+
+.c-menu {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 0;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -284,7 +290,14 @@ body {
   padding: 0px 30px 0px 30px;
 }
 
-.c-hamburger__menu a {
+.c-menu__item {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.c-menu__link {
+  display: block;
+  padding: 6px 30px 3px;
   text-align: center;
   font-size: 36px;
   color: #ffffff;
@@ -292,41 +305,17 @@ body {
   font-family: "OliviarRegular";
 }
 
-.c-hamburger:hover .c-hamburger__bar2 {
-  width: 100%;
-}
-
-.menu {
-  max-width: 1150px;
-  margin: 0 auto;
-  padding-left: 0;
-}
-
-.menu__item {
-  display: inline-block;
-  white-space: nowrap;
-}
-
-.menu__item:last-child .menu__link {
-  border-right: 0;
-}
-
-.menu__link {
-  display: block;
-  padding: 6px 30px 3px;
-}
-
-.menu__link:hover .menu__word, .menu__link:focus .menu__word {
+.c-menu__link:hover .c-menu__word, .c-menu__link:focus .c-menu__word {
   -webkit-transform: translate3d(0, -105%, 0);
           transform: translate3d(0, -105%, 0);
 }
 
-.menu__title {
+.c-menu__title {
   display: inline-block;
   overflow: hidden;
 }
 
-.menu__word {
+.c-menu__word {
   display: inline-block;
   position: relative;
   -webkit-transition: -webkit-transform .3s;
@@ -336,14 +325,10 @@ body {
   color: #fff;
 }
 
-.menu__word::before {
+.c-menu__word::before {
   position: absolute;
   content: attr(data-hover);
   top: 105%;
   color: #546BAB;
-}
-
-#body.opacity {
-  opacity: 0.5;
 }
 /*# sourceMappingURL=main.css.map */
