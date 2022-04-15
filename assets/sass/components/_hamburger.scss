@@ -15,7 +15,8 @@
         text-transform: uppercase;
     }
 
-    &__bar1, &__bar3 {
+    &__bar1, 
+    &__bar3 {
         background: $menu-color;
         transition: all .1s ease-in;
         width: 100%;
