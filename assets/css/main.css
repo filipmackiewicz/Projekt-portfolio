@@ -201,7 +201,7 @@ body {
 .c-hamburger__text {
   color: #E6E5DF;
   position: absolute;
-  top: 130%;
+  top: 2rem;
   left: -9px;
   font-family: "oliviar-semi-bold";
   font-size: 14px;
