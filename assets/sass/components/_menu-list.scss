@@ -20,11 +20,11 @@
         font-size: 36px;
         color: $white-color;
         text-decoration: none;
-        font-family: $regular_font_family;
+        font-family: $regular-font-family;
       
         &:hover,
         &:focus {
-          .c-menu__word {
+          .c-menu-list__word {
             transform: translate3d(0, -105%, 0);
           }
         }

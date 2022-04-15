@@ -304,7 +304,7 @@ body {
   font-family: "oliviar-regular";
 }
 
-.c-menu-list__link:hover .c-menu__word, .c-menu-list__link:focus .c-menu__word {
+.c-menu-list__link:hover .c-menu-list__word, .c-menu-list__link:focus .c-menu-list__word {
   -webkit-transform: translate3d(0, -105%, 0);
           transform: translate3d(0, -105%, 0);
 }
