@@ -3,7 +3,7 @@
     justify-content: space-between;
 
     &__logo {
-        background: url(/assets/img/FM-logo.png);
+        background: url('/assets/img/FM-logo.png');
         width: 3.438rem;
         height: 2.563rem;
         cursor: pointer;
@@ -14,12 +14,12 @@
         position: absolute;
         z-index: -1;
         overflow: hidden;
-        margin-left: -0.875rem;
-        margin-top: -1.063rem;
-        width: 4.936rem;
+        margin-left: -.9rem;
+        margin-top: -1.1rem;
+        width: 5rem;
         height: 4.75rem;
-        background: #2C55C8;
-        border-radius: 3.563rem;
+        background: $blue-color;
+        border-radius: 3.5rem;
         border-bottom-left-radius: 0;
         transition: transform .3s ease-in;
     }
