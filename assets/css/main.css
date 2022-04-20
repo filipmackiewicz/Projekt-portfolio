@@ -178,7 +178,7 @@ body {
   width: 5rem;
   height: 4rem;
   cursor: pointer;
-  background: url(/assets/img/FM-logo.png);
+  background: url("/assets/img/FM-logo.png");
 }
 
 .c-header__logo:before {
@@ -289,7 +289,7 @@ body {
 }
 
 .c-links.show {
-  left: calc(100% - 400px);
+  left: calc(100% - 25rem);
 }
 
 .c-menu-list {

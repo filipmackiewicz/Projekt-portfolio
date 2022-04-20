@@ -8,7 +8,7 @@
 
         cursor: pointer;
 
-        background: url(/assets/img/FM-logo.png);
+        background: url('/assets/img/FM-logo.png');
     }
 
     &__logo:before {
@@ -23,6 +23,7 @@
         margin-left: -1.1rem;
 
         content: '';
+
         transition: transform .3s ease-in;
 
         border-radius: 3.5rem;
