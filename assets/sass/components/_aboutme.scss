@@ -1,5 +1,5 @@
 .c-aboutme {
-    flex-basis: 50%;
+    flex-basis: 40%;
 
     &__first {
         position: relative;
@@ -12,6 +12,8 @@
         cursor: default;
 
         color: $secondary-text-color;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
     }
 
     &__first:before {
@@ -29,49 +31,52 @@
 
     &__header {
         font-family: $bold-font-family;
-        font-size: 2.25rem;
+        font-size: 3.6rem;
 
         color: $primary-text-color;
+        margin-bottom: 3rem;
     }
 
     &__desc {
         font-family: $light-font-family;
-        font-size: 1rem;
+        font-size: 1.6rem;
 
         color: $secondary-text-color;
+
+        margin-bottom: 3rem;
     }
 
     &__link {
-        padding-bottom: .313rem;
+        padding-bottom: .3rem;
 
         font-family: $regular-font-family;
-        font-size: 1rem;
+        font-size: 1.6rem;
 
         transition: all .3s;
         text-decoration: none;
 
         color: $red-color;
-        border-bottom: solid 1px #cb4335;
+        border-bottom: solid .1rem #cb4335;
         background-image: linear-gradient(to top, #cb4335 50%, #cb443500 50%);
         background-size: 100% 200%;
 
         & > i {
-            margin-left: .563rem;
+            margin-left: .7rem;
 
-            font-size: .75rem;
+            font-size: 1.2rem;
 
             transition: all .3s;
         }
     }
 
     &__link:hover {
-        padding: .313rem;
+        padding: .3rem;
 
         color: $white-color;
         background-position: 0 100%;
 
         & > i {
-            margin-left: .313rem;
+            margin-left: .3rem;
         }
     }
 }
