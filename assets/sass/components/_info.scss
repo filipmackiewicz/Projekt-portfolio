@@ -1,0 +1,37 @@
+.c-info {
+    flex-basis: 50%;
+
+    &__header {
+        position: relative;
+
+        padding-bottom: 1.875rem;
+
+        font-family: $bold-font-family;
+        font-size: 10rem;
+
+        color: $primary-text-color;
+    }
+
+    &__header::after {
+        position: absolute;
+        bottom: 1%;
+        left: 0;
+
+        width: 6.25rem;
+        height: .438rem;
+
+        content: '';
+
+        background: $red-color;
+    }
+
+    &__list {
+        margin-top: 3.125rem;
+
+        list-style-type: none;
+    }
+
+    &__item {
+        color: $white-color;
+    }
+}

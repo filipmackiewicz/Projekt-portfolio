@@ -1,0 +1,77 @@
+.c-aboutme {
+    flex-basis: 50%;
+
+    &__first {
+        position: relative;
+
+        padding-left: 1.2rem;
+
+        font-family: $semibold-font-family;
+        font-size: 1.4rem;
+
+        cursor: default;
+
+        color: $secondary-text-color;
+    }
+
+    &__first:before {
+        position: absolute;
+        top: 34%;
+        left: 0;
+
+        width: .9rem;
+        height: .25rem;
+
+        content: '';
+
+        background: $red-color;
+    }
+
+    &__header {
+        font-family: $bold-font-family;
+        font-size: 2.25rem;
+
+        color: $primary-text-color;
+    }
+
+    &__desc {
+        font-family: $light-font-family;
+        font-size: 1rem;
+
+        color: $secondary-text-color;
+    }
+
+    &__link {
+        padding-bottom: .313rem;
+
+        font-family: $regular-font-family;
+        font-size: 1rem;
+
+        transition: all .3s;
+        text-decoration: none;
+
+        color: $red-color;
+        border-bottom: solid 1px #cb4335;
+        background-image: linear-gradient(to top, #cb4335 50%, #cb443500 50%);
+        background-size: 100% 200%;
+
+        & > i {
+            margin-left: .563rem;
+
+            font-size: .75rem;
+
+            transition: all .3s;
+        }
+    }
+
+    &__link:hover {
+        padding: .313rem;
+
+        color: $white-color;
+        background-position: 0 100%;
+
+        & > i {
+            margin-left: .313rem;
+        }
+    }
+}

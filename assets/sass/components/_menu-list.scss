@@ -1,32 +1,40 @@
 .c-menu-list {
-    max-width: 1150px;
-    margin: 0 auto;
-    padding-left: 0;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
+
+    max-width: 115rem;
+    margin: 0 auto;
+    padding: 0 3rem 0 3rem;
+    padding-left: 0;
+
     list-style: none;
-    padding: 0px 30px 0px 30px;
+
+    transform: translateY(-50%);
 
     &__item {
         display: inline-block;
+
         white-space: nowrap;
     }
 
     &__link {
         display: block;
-        padding: 6px 30px 3px;
-        text-align: center;
-        font-size: 36px;
-        color: $white-color;
-        text-decoration: none;
+
+        padding: .6rem 3rem .3rem;
+
         font-family: $regular-font-family;
-      
+        font-size: 3.6rem;
+
+        text-align: center;
+        text-decoration: none;
+
+        color: $white-color;
+
         &:hover,
         &:focus {
-          .c-menu-list__word {
-            transform: translate3d(0, -105%, 0);
-          }
+            .c-menu-list__word {
+                transform: translate3d(0, -105%, 0);
+            }
         }
     }
 
@@ -36,16 +44,21 @@
     }
 
     &__word {
-        display: inline-block;
         position: relative;
+
+        display: inline-block;
+
         transition: transform .3s;
+
         color: $white-color;
-      
+
         &::before {
-          position: absolute;
-          content: attr(data-hover);
-          top: 105%;
-          color: $link-hover-color;
+            position: absolute;
+            top: 105%;
+
+            content: attr(data-hover);
+
+            color: $link-hover-color;
         }
     }
 }

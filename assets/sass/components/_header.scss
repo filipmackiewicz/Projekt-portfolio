@@ -3,25 +3,31 @@
     justify-content: space-between;
 
     &__logo {
-        background: url(/assets/img/FM-logo.png);
-        width: 3.438rem;
-        height: 2.563rem;
+        width: 5.6rem;
+        height: 4.1rem;
+
         cursor: pointer;
+
+        background: url(/assets/img/FM-logo.png);
     }
 
     &__logo:before {
-        content: "";
         position: absolute;
         z-index: -1;
+
         overflow: hidden;
-        margin-left: -0.875rem;
-        margin-top: -1.063rem;
-        width: 4.936rem;
-        height: 4.75rem;
-        background: $blue-color;
-        border-radius: 3.563rem;
-        border-bottom-left-radius: 0;
+
+        width: 7.9rem;
+        height: 7.6rem;
+        margin-top: -1.7rem;
+        margin-left: -1.4rem;
+
+        content: '';
         transition: transform .3s ease-in;
+
+        border-radius: 3.5rem;
+        border-bottom-left-radius: 0;
+        background: $blue-color;
     }
 
     &__logo:hover::before {

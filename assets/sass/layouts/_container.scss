@@ -1,10 +1,9 @@
 .l-container {
-    padding: 0;
-
-    @include break (tablet) {
-        padding-left: 18.125rem;
-        padding-right: 18.125rem;
+@include break (tablet) {
         padding-top: 5rem;
+        padding-right: 18.125rem;
+        padding-left: 18.125rem;
     }
 
+    padding: 0;
 }
