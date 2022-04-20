@@ -13,7 +13,10 @@ body {
   background-position: center;
   overflow: hidden;
   overflow-y: scroll;
-  font-family: 'Dejavu Sans', bold;
+}
+
+:root {
+  font-size: 16px;
 }
 
 @font-face {
@@ -133,7 +136,7 @@ body {
 }
 
 .l-bg {
-  padding: 50px;
+  padding: 3.125rem;
   background-image: url("/assets/img/ziomek-compress.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -194,7 +197,7 @@ body {
 .c-hamburger {
   background: transparent;
   border: none;
-  width: 25.5px;
+  width: 1.594rem;
   position: relative;
   cursor: pointer;
 }
@@ -203,9 +206,9 @@ body {
   color: #E6E5DF;
   position: absolute;
   top: 130%;
-  left: -9px;
+  left: -0.563rem;
   font-family: "OliviarSemiBold";
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 
@@ -214,7 +217,7 @@ body {
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
   width: 100%;
-  margin-top: 6px;
+  margin-top: 0.375rem;
   height: 0.125rem;
   display: block;
   float: right;
@@ -225,7 +228,7 @@ body {
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
   width: 60%;
-  margin-top: 6px;
+  margin-top: 0.375rem;
   height: 0.125rem;
   display: block;
   float: right;
@@ -275,11 +278,11 @@ body {
 }
 
 .c-links.show {
-  left: calc(100% - 400px);
+  left: calc(100% - 25rem);
 }
 
 .c-menu {
-  max-width: 1150px;
+  max-width: 71.875rem;
   margin: 0 auto;
   padding-left: 0;
   position: relative;
@@ -287,7 +290,7 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   list-style: none;
-  padding: 0px 30px 0px 30px;
+  padding: 0rem 1.875rem 0rem 1.875rem;
 }
 
 .c-menu__item {
@@ -297,9 +300,9 @@ body {
 
 .c-menu__link {
   display: block;
-  padding: 6px 30px 3px;
+  padding: 0.375rem 1.875rem 0.188rem;
   text-align: center;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #ffffff;
   text-decoration: none;
   font-family: "OliviarRegular";

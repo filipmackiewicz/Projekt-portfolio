@@ -1,12 +1,12 @@
 .c-menu {
-    max-width: 1150px;
+    max-width: 71.875rem;
     margin: 0 auto;
     padding-left: 0;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     list-style: none;
-    padding: 0px 30px 0px 30px;
+    padding: 0rem 1.875rem 0rem 1.875rem;
 
     &__item {
         display: inline-block;
@@ -15,9 +15,9 @@
 
     &__link {
         display: block;
-        padding: 6px 30px 3px;
+        padding: 0.375rem 1.875rem 0.188rem;
         text-align: center;
-        font-size: 36px;
+        font-size: 2.25rem;
         color: #ffffff;
         text-decoration: none;
         font-family: $regular_font_family;
