@@ -1,0 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/assets/img/bg-page-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+:root{
+    font-size: 16px;
+}

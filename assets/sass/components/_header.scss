@@ -1,0 +1,30 @@
+.c-header {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        background: url('/assets/img/FM-logo.png');
+        width: 3.438rem;
+        height: 2.563rem;
+        cursor: pointer;
+    }
+
+    &__logo:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        overflow: hidden;
+        margin-left: -.9rem;
+        margin-top: -1.1rem;
+        width: 5rem;
+        height: 4.75rem;
+        background: $blue-color;
+        border-radius: 3.5rem;
+        border-bottom-left-radius: 0;
+        transition: transform .3s ease-in;
+    }
+
+    &__logo:hover::before {
+        transform: rotate(-180deg);
+    }
+}
