@@ -558,8 +558,8 @@ body {
             transform: translateY(0);
   }
   15% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    -webkit-transform: translateY(-0.8rem);
+            transform: translateY(-0.8rem);
   }
 }
 
@@ -569,8 +569,8 @@ body {
             transform: translateY(0);
   }
   15% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
+    -webkit-transform: translateY(-0.8rem);
+            transform: translateY(-0.8rem);
   }
 }
 /*# sourceMappingURL=main.css.map */
