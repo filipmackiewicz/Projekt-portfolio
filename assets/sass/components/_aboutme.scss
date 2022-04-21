@@ -1,5 +1,20 @@
 .c-aboutme {
-    flex-basis: 40%;
+    flex-basis: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-top: 3rem;
+
+    
+
+
+    @include break (tablet-large){
+        flex-basis: 40%;
+        margin-top: 0;
+        padding-top: 0;
+    }
 
     &__first {
         position: relative;
@@ -59,6 +74,13 @@
         border-bottom: solid .1rem #cb4335;
         background-image: linear-gradient(to top, #cb4335 50%, #cb443500 50%);
         background-size: 100% 200%;
+
+        position: absolute;
+        bottom: 0%;
+
+        @include break (tablet-large) {
+            bottom: 30%;
+        }
 
         & > i {
             margin-left: .7rem;
