@@ -162,7 +162,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 15rem;
+  margin-top: 21rem;
+  margin-bottom: 22rem;
 }
 
 .c-header {
@@ -289,7 +290,7 @@ body {
 }
 
 .c-links.show {
-  left: calc(100% - 25rem);
+  left: calc(100% - 40rem);
 }
 
 .c-menu-list {
