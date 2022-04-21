@@ -15,10 +15,10 @@
 }
 
 .c-links.show {
-    left: 0%;
-
-    @include break (smartphone-large) {
+@include break (smartphone-large) {
         left: calc(100% - 40rem);
     }
+
+    left: 0;
 }
 

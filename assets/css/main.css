@@ -66,7 +66,7 @@ body {
 
 [class^='icon-'],
 [class*=' icon-'] {
-  font-family: "fm-icon" !important;
+  font-family: 'fm-icon';
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
@@ -296,7 +296,7 @@ body {
 }
 
 .c-links.show {
-  left: 0%;
+  left: 0;
 }
 
 @media (min-width: 640px) {
@@ -318,8 +318,8 @@ body {
 
 .c-menu-list__item {
   display: inline-block;
-  white-space: nowrap;
   min-width: 100%;
+  white-space: nowrap;
 }
 
 .c-menu-list__link {
@@ -360,8 +360,7 @@ body {
 }
 
 .c-aboutme {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,28 +371,29 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
   padding-top: 3rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 @media (min-width: 1024px) {
   .c-aboutme {
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
     margin-top: 0;
     padding-top: 0;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
   }
 }
 
 .c-aboutme__first {
   position: relative;
+  margin-bottom: 3rem;
   padding-left: 1.2rem;
   font-family: "oliviar-semi-bold";
   font-size: 1.4rem;
   cursor: default;
-  color: #b4b3b1;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  color: #b4b3b1;
 }
 
 .c-aboutme__first:before {
@@ -407,20 +407,22 @@ body {
 }
 
 .c-aboutme__header {
+  margin-bottom: 3rem;
   font-family: "oliviar-bold";
   font-size: 3.6rem;
   color: #e6e5df;
-  margin-bottom: 3rem;
 }
 
 .c-aboutme__desc {
+  margin-bottom: 3rem;
   font-family: "oliviar-light";
   font-size: 1.6rem;
   color: #b4b3b1;
-  margin-bottom: 3rem;
 }
 
 .c-aboutme__link {
+  position: absolute;
+  bottom: 0;
   padding-bottom: .3rem;
   font-family: "oliviar-regular";
   font-size: 1.6rem;
@@ -432,8 +434,6 @@ body {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #cb4335), color-stop(50%, #cb443500));
   background-image: linear-gradient(to top, #cb4335 50%, #cb443500 50%);
   background-size: 100% 200%;
-  position: absolute;
-  bottom: 0%;
 }
 
 @media (min-width: 1024px) {
@@ -526,30 +526,30 @@ body {
 }
 
 .c-navigation {
-  height: 4rem;
   position: absolute;
   top: 90%;
   left: 50%;
+  height: 4rem;
 }
 
 .c-navigation__link {
-  text-decoration: none;
-  background-color: #2c55c8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: .5rem;
-  border-radius: 2.5rem;
   height: 100%;
+  padding: .5rem;
+  text-decoration: none;
+  border-radius: 2.5rem;
+  background-color: #2c55c8;
 }
 
 .c-navigation__link > i {
-  color: #fff;
   -webkit-animation: bounce 2s infinite;
           animation: bounce 2s infinite;
+  color: #fff;
 }
 
 @-webkit-keyframes bounce {
