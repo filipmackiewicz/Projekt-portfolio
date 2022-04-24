@@ -1,42 +1,62 @@
 @font-face {
     font-family: 'oliviar-regular';
+    font-weight: 400;
+    font-style: normal;
 
+    font-display: swap;
     src: url('/assets/fonts/oliviar-sans-regular.otf');
 }
 
 @font-face {
     font-family: 'oliviar-bold';
+    font-weight: 700;
+    font-style: normal;
 
+    font-display: swap;
     src: url('/assets/fonts/oliviar-sans-bold.otf');
 }
 
 @font-face {
     font-family: 'oliviar-black';
+    font-style: normal;
 
+    font-display: swap;
     src: url('/assets/fonts/oliviar-sans-black.otf');
 }
 
 @font-face {
     font-family: 'oliviar-light';
+    font-weight: 300;
+    font-style: normal;
 
+    font-display: swap;
     src: url('/assets/fonts/oliviar-sans-light.otf');
 }
 
 @font-face {
     font-family: 'oliviar-semi-bold';
+    font-weight: 600;
+    font-style: normal;
 
+    font-display: swap;
     src: url('/assets/fonts/oliviar-sans-semibold.otf');
 }
 
 @font-face {
     font-family: 'oliviar-thin';
+    font-weight: 100;
+    font-style: normal;
 
+    font-display: swap;
     src: url('/assets/fonts/oliviar-sans-thin.otf');
 }
 
 @font-face {
     font-family: 'oliviar-ultra-light';
+    font-weight: 200;
+    font-style: normal;
 
+    font-display: swap;
     src: url('/assets/fonts/oliviar-sans-ultralight.otf');
 }
 
