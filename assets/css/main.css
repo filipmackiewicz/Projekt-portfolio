@@ -7,51 +7,62 @@ html {
   padding: 0;
 }
 
-body {
-  overflow: hidden;
-  overflow-y: scroll;
-  font-size: 16px;
-  background-image: url("/assets/img/bg-page-desktop.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
 :root {
   font-size: 10px;
 }
 
 @font-face {
   font-family: 'oliviar-regular';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
   src: url("/assets/fonts/oliviar-sans-regular.otf");
 }
 
 @font-face {
   font-family: 'oliviar-bold';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
   src: url("/assets/fonts/oliviar-sans-bold.otf");
 }
 
 @font-face {
   font-family: 'oliviar-black';
+  font-style: normal;
+  font-display: swap;
   src: url("/assets/fonts/oliviar-sans-black.otf");
 }
 
 @font-face {
   font-family: 'oliviar-light';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
   src: url("/assets/fonts/oliviar-sans-light.otf");
 }
 
 @font-face {
   font-family: 'oliviar-semi-bold';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
   src: url("/assets/fonts/oliviar-sans-semibold.otf");
 }
 
 @font-face {
   font-family: 'oliviar-thin';
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
   src: url("/assets/fonts/oliviar-sans-thin.otf");
 }
 
 @font-face {
   font-family: 'oliviar-ultra-light';
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
   src: url("/assets/fonts/oliviar-sans-ultralight.otf");
 }
 
@@ -170,6 +181,15 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.l-body {
+  overflow: hidden;
+  overflow-y: scroll;
+  font-size: 16px;
+  background-image: url("/assets/img/bg-page-desktop.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .c-header {
@@ -396,7 +416,7 @@ body {
   color: #b4b3b1;
 }
 
-.c-aboutme__first:before {
+.c-aboutme__first::before {
   position: absolute;
   top: 34%;
   left: 0;
@@ -406,7 +426,7 @@ body {
   background: #cb4335;
 }
 
-.c-aboutme__header {
+.c-aboutme__heading {
   margin-bottom: 3rem;
   font-family: "oliviar-bold";
   font-size: 3.6rem;
