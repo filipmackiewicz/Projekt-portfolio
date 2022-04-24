@@ -1,5 +1,5 @@
 .c-info {
-    @include break (tablet-large) {
+    @include media (tablet-large) {
         min-height: 85.7vh;
 
         background: none;
@@ -16,7 +16,7 @@ display: flex;
     flex-basis: 100%;
 
     &__header {
-        @include break (smartphone) {
+        @include media (smartphone) {
             font-size: 7rem;
         }
 

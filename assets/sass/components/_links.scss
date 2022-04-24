@@ -15,7 +15,7 @@
 }
 
 .c-links.show {
-@include break (smartphone-large) {
+@include media (smartphone-large) {
         left: calc(100% - 40rem);
     }
 

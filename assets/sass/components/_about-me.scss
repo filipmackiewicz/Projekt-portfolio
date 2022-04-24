@@ -1,5 +1,5 @@
 .c-about-me {
-    @include break (tablet-large) {
+    @include media (tablet-large) {
         margin-top: 0;
         padding-top: 0;
 
@@ -62,7 +62,7 @@ position: relative;
     }
 
     &__link {
-        @include break (tablet-large) {
+        @include media (tablet-large) {
             bottom: 30%;
         }
 

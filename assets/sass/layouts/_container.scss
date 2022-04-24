@@ -1,5 +1,5 @@
 .l-container {
-    @include break (tablet) {
+    @include media (tablet) {
         padding-top: 5rem;
         padding-right: 18.125rem;
         padding-left: 18.125rem;
