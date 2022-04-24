@@ -1,6 +1,7 @@
+@import '../base/bounce';
 .c-navigation {
     position: absolute;
-    top: 90%;
+    bottom: 10%;
     left: 50%;
 
     height: 4rem;
@@ -20,16 +21,6 @@
             animation: bounce 2s infinite;
 
             color: $color-white;
-        }
-
-        @keyframes bounce {
-            0% {
-                transform: translateY(0);
-            }
-
-            15% {
-                transform: translateY(-.8rem);
-            }
         }
     }
 }

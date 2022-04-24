@@ -545,9 +545,31 @@ html {
   background: #2c55c8;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  15% {
+    -webkit-transform: translateY(-0.8rem);
+            transform: translateY(-0.8rem);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  15% {
+    -webkit-transform: translateY(-0.8rem);
+            transform: translateY(-0.8rem);
+  }
+}
+
 .c-navigation {
   position: absolute;
-  top: 90%;
+  bottom: 10%;
   left: 50%;
   height: 4rem;
 }
@@ -570,27 +592,5 @@ html {
   -webkit-animation: bounce 2s infinite;
           animation: bounce 2s infinite;
   color: #fff;
-}
-
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  15% {
-    -webkit-transform: translateY(-0.8rem);
-            transform: translateY(-0.8rem);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  15% {
-    -webkit-transform: translateY(-0.8rem);
-            transform: translateY(-0.8rem);
-  }
 }
 /*# sourceMappingURL=main.css.map */
