@@ -405,7 +405,7 @@ html {
   }
 }
 
-.c-aboutme__first {
+.c-aboutme__information {
   position: relative;
   margin-bottom: 3rem;
   padding-left: 1.2rem;
@@ -416,7 +416,7 @@ html {
   color: #b4b3b1;
 }
 
-.c-aboutme__first::before {
+.c-aboutme__information::before {
   position: absolute;
   top: 34%;
   left: 0;
@@ -433,7 +433,7 @@ html {
   color: #e6e5df;
 }
 
-.c-aboutme__desc {
+.c-aboutme__description {
   margin-bottom: 3rem;
   font-family: "oliviar-light";
   font-size: 1.6rem;
@@ -450,7 +450,7 @@ html {
   transition: all .3s;
   text-decoration: none;
   color: #cb4335;
-  border-bottom: solid .1rem #cb4335;
+  border-bottom: solid 0.1rem #cb4335;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #cb4335), color-stop(50%, #cb443500));
   background-image: linear-gradient(to top, #cb4335 50%, #cb443500 50%);
   background-size: 100% 200%;

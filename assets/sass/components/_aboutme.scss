@@ -15,7 +15,7 @@ position: relative;
     padding-top: 3rem;
 
     flex-basis: 100%;
-    &__first {
+    &__information {
         position: relative;
 
         margin-bottom: 3rem;
@@ -30,7 +30,7 @@ position: relative;
         color: $color-gray;
     }
 
-    &__first::before {
+    &__information::before {
         position: absolute;
         top: 34%;
         left: 0;
@@ -40,7 +40,7 @@ position: relative;
 
         content: '';
 
-        background: $red-color;
+        background: $color-red;
     }
 
     &__heading {
@@ -52,7 +52,7 @@ position: relative;
         color: $color-gray-lighter;
     }
 
-    &__desc {
+    &__description {
         margin-bottom: 3rem;
 
         font-family: $font-family-light;

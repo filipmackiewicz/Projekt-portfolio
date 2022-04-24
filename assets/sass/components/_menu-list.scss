@@ -29,7 +29,7 @@
         text-align: left;
         text-decoration: none;
 
-        color: $white-color;
+        color: $color-white;
 
         &:hover,
         &:focus {
@@ -51,7 +51,7 @@
 
         transition: transform .3s;
 
-        color: $white-color;
+        color: $color-white;
 
         &::before {
             position: absolute;
