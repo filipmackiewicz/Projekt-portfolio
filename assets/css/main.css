@@ -175,7 +175,7 @@ html {
   width: 100%;
 }
 
-.l-aboutme {
+.l-about-me {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,7 +379,7 @@ html {
   color: #546bab;
 }
 
-.c-aboutme {
+.c-about-me {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,7 +397,7 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .c-aboutme {
+  .c-about-me {
     margin-top: 0;
     padding-top: 0;
     -ms-flex-preferred-size: 40%;
@@ -405,7 +405,7 @@ html {
   }
 }
 
-.c-aboutme__information {
+.c-about-me__information {
   position: relative;
   margin-bottom: 3rem;
   padding-left: 1.2rem;
@@ -416,7 +416,7 @@ html {
   color: #b4b3b1;
 }
 
-.c-aboutme__information::before {
+.c-about-me__information::before {
   position: absolute;
   top: 34%;
   left: 0;
@@ -426,21 +426,21 @@ html {
   background: #cb4335;
 }
 
-.c-aboutme__heading {
+.c-about-me__heading {
   margin-bottom: 3rem;
   font-family: "oliviar-bold";
   font-size: 3.6rem;
   color: #e6e5df;
 }
 
-.c-aboutme__description {
+.c-about-me__description {
   margin-bottom: 3rem;
   font-family: "oliviar-light";
   font-size: 1.6rem;
   color: #b4b3b1;
 }
 
-.c-aboutme__link {
+.c-about-me__link {
   position: absolute;
   bottom: 0;
   padding-bottom: .3rem;
@@ -457,25 +457,25 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .c-aboutme__link {
+  .c-about-me__link {
     bottom: 30%;
   }
 }
 
-.c-aboutme__link > i {
+.c-about-me__link > i {
   margin-left: .7rem;
   font-size: 1.2rem;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.c-aboutme__link:hover {
+.c-about-me__link:hover {
   padding: .3rem;
   color: #fff;
   background-position: 0 100%;
 }
 
-.c-aboutme__link:hover > i {
+.c-about-me__link:hover > i {
   margin-left: .3rem;
 }
 
