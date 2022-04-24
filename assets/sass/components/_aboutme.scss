@@ -1,12 +1,12 @@
 .c-aboutme {
-@include break (tablet-large) {
+    @include break (tablet-large) {
         margin-top: 0;
         padding-top: 0;
 
         flex-basis: 40%;
     }
 
-    position: relative;
+position: relative;
 
     display: flex;
     flex-direction: column;
@@ -15,10 +15,6 @@
     padding-top: 3rem;
 
     flex-basis: 100%;
-
-
-
-
     &__first {
         position: relative;
 
@@ -34,7 +30,7 @@
         color: $secondary-text-color;
     }
 
-    &__first:before {
+    &__first::before {
         position: absolute;
         top: 34%;
         left: 0;
@@ -47,7 +43,7 @@
         background: $red-color;
     }
 
-    &__header {
+    &__heading {
         margin-bottom: 3rem;
 
         font-family: $bold-font-family;
@@ -66,11 +62,11 @@
     }
 
     &__link {
-@include break (tablet-large) {
+        @include break (tablet-large) {
             bottom: 30%;
         }
 
-        position: absolute;
+position: absolute;
         bottom: 0;
 
         padding-bottom: .3rem;
