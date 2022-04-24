@@ -79,7 +79,7 @@ position: absolute;
 
         color: $color-red;
         border-bottom: solid .1rem $color-red;
-        background-image: linear-gradient(to top, $color-red 50%, #cb443500 50%);
+        background-image: linear-gradient(to top, $color-red 50%, $color-blue-dark 50%);
         background-size: 100% 200%;
 
         & > i {
