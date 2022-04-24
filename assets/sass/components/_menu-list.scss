@@ -23,7 +23,7 @@
 
         padding: .6rem 3rem .3rem;
 
-        font-family: $regular-font-family;
+        font-family: $font-family-regular;
         font-size: 3.6rem;
 
         text-align: left;
@@ -59,7 +59,7 @@
 
             content: attr(data-hover);
 
-            color: $link-hover-color;
+            color: $color-blue-lighter;
         }
     }
 }

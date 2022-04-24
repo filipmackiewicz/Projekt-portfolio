@@ -14,12 +14,12 @@
         top: 3rem;
         left: -.9rem;
 
-        font-family: $semibold-font-family;
+        font-family: $font-family-semibold;
         font-size: 1.4rem;
 
         text-transform: uppercase;
 
-        color: $menu-color;
+        color: $color-gray-lighter;
     }
 
     &__bar1,
@@ -33,7 +33,7 @@
 
         transition: all .1s ease-in;
 
-        background: $menu-color;
+        background: $color-gray-lighter;
     }
 
     &__bar2 {
@@ -46,7 +46,7 @@
 
         transition: all .1s ease-in;
 
-        background: $menu-color;
+        background: $color-gray-lighter;
     }
 
     &__bar3.animate {

@@ -21,13 +21,13 @@ position: relative;
         margin-bottom: 3rem;
         padding-left: 1.2rem;
 
-        font-family: $semibold-font-family;
+        font-family: $font-family-semibold;
         font-size: 1.4rem;
 
         cursor: default;
         text-transform: uppercase;
 
-        color: $secondary-text-color;
+        color: $color-gray;
     }
 
     &__first::before {
@@ -46,19 +46,19 @@ position: relative;
     &__heading {
         margin-bottom: 3rem;
 
-        font-family: $bold-font-family;
+        font-family: $font-family-bold;
         font-size: 3.6rem;
 
-        color: $primary-text-color;
+        color: $color-gray-lighter;
     }
 
     &__desc {
         margin-bottom: 3rem;
 
-        font-family: $light-font-family;
+        font-family: $font-family-light;
         font-size: 1.6rem;
 
-        color: $secondary-text-color;
+        color: $color-gray;
     }
 
     &__link {
@@ -71,15 +71,15 @@ position: absolute;
 
         padding-bottom: .3rem;
 
-        font-family: $regular-font-family;
+        font-family: $font-family-regular;
         font-size: 1.6rem;
 
         transition: all .3s;
         text-decoration: none;
 
-        color: $red-color;
-        border-bottom: solid .1rem #cb4335;
-        background-image: linear-gradient(to top, #cb4335 50%, #cb443500 50%);
+        color: $color-red;
+        border-bottom: solid .1rem $color-red;
+        background-image: linear-gradient(to top, $color-red 50%, #cb443500 50%);
         background-size: 100% 200%;
 
         & > i {
@@ -94,7 +94,7 @@ position: absolute;
     &__link:hover {
         padding: .3rem;
 
-        color: $white-color;
+        color: $color-white;
         background-position: 0 100%;
 
         & > i {

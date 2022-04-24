@@ -11,18 +11,17 @@ $breakpoints: (smartphone-small: (min-width: 320px),
 );
 
 //fonts
-$regular-font-family: 'oliviar-regular';
-$bold-font-family: 'oliviar-bold';
-$light-font-family: 'oliviar-light';
-$semibold-font-family: 'oliviar-semi-bold';
-$black-font-family: 'oliviar-black';
-$light-font-family: 'oliviar-light';
+$font-family-regular: 'oliviar-regular';
+$font-family-bold: 'oliviar-bold';
+$font-family-light: 'oliviar-light';
+$font-family-semibold: 'oliviar-semi-bold';
+$font-family-black: 'oliviar-black';
+$font-family-light: 'oliviar-light';
 
 //colors
-$red-color: #cb4335;
-$blue-color: #2c55c8;
-$primary-text-color: #e6e5df;
-$secondary-text-color: #b4b3b1;
-$menu-color: #e6e5df;
-$white-color: #fff;
-$link-hover-color: #546bab;
+$color-red: #cb4335;
+$color-blue: #2c55c8;
+$color-gray-lighter: #e6e5df;
+$color-gray: #b4b3b1;
+$color-white: #fff;
+$color-blue-lighter: #546bab;

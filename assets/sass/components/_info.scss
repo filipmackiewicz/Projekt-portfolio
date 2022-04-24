@@ -24,10 +24,10 @@ position: relative;
 
         padding-bottom: 1rem;
 
-        font-family: $bold-font-family;
+        font-family: $font-family-bold;
         font-size: 4.5rem;
 
-        color: $primary-text-color;
+        color: $color-gray-lighter;
     }
 
     &__header::after {
@@ -40,7 +40,7 @@ position: relative;
 
         content: '';
 
-        background: $red-color;
+        background: $color-red;
     }
 
     &__list {
@@ -54,12 +54,12 @@ position: relative;
 
             font-size: 3.5rem;
 
-            color: $white-color;
+            color: $color-white;
             border-radius: 50%;
         }
 
         & li:hover {
-            background: $blue-color;
+            background: $color-blue;
         }
     }
 }

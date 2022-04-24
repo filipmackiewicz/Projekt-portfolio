@@ -14,12 +14,12 @@
         text-decoration: none;
 
         border-radius: 2.5rem;
-        background-color: $blue-color;
+        background-color: $color-blue;
 
         & > i {
             animation: bounce 2s infinite;
 
-            color: #fff;
+            color: $color-white;
         }
 
         @keyframes bounce {
