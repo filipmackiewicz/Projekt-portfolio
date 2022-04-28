@@ -1,3 +1,23 @@
+
+.c-about-me {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 3rem;
+
+@include media (tablet-large) {
+        margin-top: 0;
+        padding-top: 0;
+
+        flex-basis: 40%;
+    }
+
+flex-basis: 100%;
+}
+
 .c-about-me .c-about-me__title {
     position: relative;
 
@@ -82,21 +102,3 @@
     margin-left: .3rem;
 }
 
-.c-about-me {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    padding-top: 3rem;
-
-@include media (tablet-large) {
-        margin-top: 0;
-        padding-top: 0;
-
-        flex-basis: 40%;
-    }
-
-flex-basis: 100%;
-}
