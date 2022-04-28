@@ -1,36 +1,18 @@
-.c-about-me {
-    @include media (tablet-large) {
-        margin-top: 0;
-        padding-top: 0;
+.c-about-me .c-about-me__title {
+    position: relative;
 
-        flex-basis: 40%;
-    }
+    margin-bottom: 3rem;
+    padding-left: 1.2rem;
 
-position: relative;
+    font-family: $font-family-semibold;
+    font-size: 1.4rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    cursor: default;
+    text-transform: uppercase;
 
-    padding-top: 3rem;
+    color: $color-gray;
 
-    flex-basis: 100%;
-    &__information {
-        position: relative;
-
-        margin-bottom: 3rem;
-        padding-left: 1.2rem;
-
-        font-family: $font-family-semibold;
-        font-size: 1.4rem;
-
-        cursor: default;
-        text-transform: uppercase;
-
-        color: $color-gray;
-    }
-
-    &__information::before {
+    &::before {
         position: absolute;
         top: 34%;
         left: 0;
@@ -42,63 +24,79 @@ position: relative;
 
         background: $color-red;
     }
+}
 
-    &__heading {
-        margin-bottom: 3rem;
+.c-about-me__subtitle {
+    margin-bottom: 3rem;
 
-        font-family: $font-family-bold;
-        font-size: 3.6rem;
+    font-family: $font-family-bold;
+    font-size: 3.6rem;
 
-        color: $color-gray-lighter;
+    color: $color-gray-lighter;
+}
+
+.c-about-me__description {
+    margin-bottom: 3rem;
+
+    font-family: $font-family-light;
+    font-size: 1.6rem;
+
+    color: $color-gray;
+}
+.c-about-me__link {
+    position: absolute;
+    bottom: 0;
+
+    padding-bottom: .3rem;
+
+    font-family: $font-family-regular;
+    font-size: 1.6rem;
+
+    transition: all .3s;
+    text-decoration: none;
+
+    color: $color-red;
+    border-bottom: solid .1rem $color-red;
+    background-image: linear-gradient(to top, $color-red 50%, $color-blue-dark 50%);
+    background-size: 100% 200%;
+
+@include media (tablet-large) {
+        bottom: 30%;
+    }
+}
+.c-about-me-link__icon {
+    margin-left: .7rem;
+
+    font-size: 1.2rem;
+
+    transition: all .3s;
+}
+.c-about-me__link:hover {
+    padding: .3rem;
+
+    color: $color-white;
+    background-position: 0 100%;
+}
+
+.c-about-me__link:hover .c-about-me-link__icon {
+    margin-left: .3rem;
+}
+
+.c-about-me {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 3rem;
+
+@include media (tablet-large) {
+        margin-top: 0;
+        padding-top: 0;
+
+        flex-basis: 40%;
     }
 
-    &__description {
-        margin-bottom: 3rem;
-
-        font-family: $font-family-light;
-        font-size: 1.6rem;
-
-        color: $color-gray;
-    }
-
-    &__link {
-        @include media (tablet-large) {
-            bottom: 30%;
-        }
-
-position: absolute;
-        bottom: 0;
-
-        padding-bottom: .3rem;
-
-        font-family: $font-family-regular;
-        font-size: 1.6rem;
-
-        transition: all .3s;
-        text-decoration: none;
-
-        color: $color-red;
-        border-bottom: solid .1rem $color-red;
-        background-image: linear-gradient(to top, $color-red 50%, $color-blue-dark 50%);
-        background-size: 100% 200%;
-
-        & > i {
-            margin-left: .7rem;
-
-            font-size: 1.2rem;
-
-            transition: all .3s;
-        }
-    }
-
-    &__link:hover {
-        padding: .3rem;
-
-        color: $color-white;
-        background-position: 0 100%;
-
-        & > i {
-            margin-left: .3rem;
-        }
-    }
+flex-basis: 100%;
 }

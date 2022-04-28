@@ -378,33 +378,7 @@ html {
   color: #546bab;
 }
 
-.c-about-me {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 3rem;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-}
-
-@media (min-width: 1024px) {
-  .c-about-me {
-    margin-top: 0;
-    padding-top: 0;
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-  }
-}
-
-.c-about-me__information {
+.c-about-me .c-about-me__title {
   position: relative;
   margin-bottom: 3rem;
   padding-left: 1.2rem;
@@ -415,7 +389,7 @@ html {
   color: #b4b3b1;
 }
 
-.c-about-me__information::before {
+.c-about-me .c-about-me__title::before {
   position: absolute;
   top: 34%;
   left: 0;
@@ -425,7 +399,7 @@ html {
   background: #cb4335;
 }
 
-.c-about-me__heading {
+.c-about-me__subtitle {
   margin-bottom: 3rem;
   font-family: "oliviar-bold";
   font-size: 3.6rem;
@@ -461,7 +435,7 @@ html {
   }
 }
 
-.c-about-me__link > i {
+.c-about-me-link__icon {
   margin-left: .7rem;
   font-size: 1.2rem;
   -webkit-transition: all .3s;
@@ -474,8 +448,34 @@ html {
   background-position: 0 100%;
 }
 
-.c-about-me__link:hover > i {
+.c-about-me__link:hover .c-about-me-link__icon {
   margin-left: .3rem;
+}
+
+.c-about-me {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+@media (min-width: 1024px) {
+  .c-about-me {
+    margin-top: 0;
+    padding-top: 0;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
 }
 
 .c-info {
