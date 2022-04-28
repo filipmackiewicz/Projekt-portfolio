@@ -12,7 +12,6 @@ class Menu {
         this.links = document.querySelector(this.UiSelectors.links);
         this.menu = document.querySelector(this.UiSelectors.menu);
         this.addEventListeners();
-        console.log(this.bar);
     }
 
     showMenu() {

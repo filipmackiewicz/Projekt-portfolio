@@ -1,5 +1,4 @@
 class Smoothscroll {
-
     constructor () {
         this.UiSelectors = {
             smooth: '[data-smooth]'
