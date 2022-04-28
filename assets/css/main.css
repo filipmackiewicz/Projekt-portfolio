@@ -398,7 +398,7 @@ html {
   }
 }
 
-.c-about-me .c-about-me__title {
+.c-about-me__title {
   position: relative;
   margin-bottom: 3rem;
   padding-left: 1.2rem;
@@ -409,7 +409,7 @@ html {
   color: #b4b3b1;
 }
 
-.c-about-me .c-about-me__title::before {
+.c-about-me__title::before {
   position: absolute;
   top: 34%;
   left: 0;
