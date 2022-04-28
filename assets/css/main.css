@@ -294,7 +294,7 @@ html {
   width: 2rem;
 }
 
-.c-links {
+.c-menu-links {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -304,16 +304,16 @@ html {
   background: #2c55c8;
 }
 
-.c-links__hide {
+.c-menu-links__invisible {
   left: 100%;
 }
 
-.c-links.is-visible {
+.c-menu-links.is-visible {
   left: 0;
 }
 
 @media (min-width: 640px) {
-  .c-links.is-visible {
+  .c-menu-links.is-visible {
     left: calc(100% - 40rem);
   }
 }

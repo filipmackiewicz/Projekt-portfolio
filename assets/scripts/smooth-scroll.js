@@ -1,16 +1,16 @@
 class Smoothscroll {
     constructor () {
         this.UiSelectors = {
-            smooth: '[data-smooth]'
+            smothItems: '[data-smooth]'
         }
     }
 
     initialize() {
-        this.smooth = document.querySelector(this.UiSelectors.smooth);
+        this.smothItems = document.querySelector(this.UiSelectors.smothItems);
         this.addEventListeners();
     }
 
-    scrollToSmothly(pos, time) {
+    scrollSmothly(pos, time) {
         const currentPos = window.pageYOffset;
         const start = null;
         if(time == null) time = 500;
@@ -32,6 +32,6 @@ class Smoothscroll {
     }
 
     addEventListeners() {
-        this.smooth.addEventListener('click', () => this.scrollToSmoothly(500, 1500));
+        this.smothItems.addEventListener('click', () => this.scrollSmoothly(500, 1500));
     }
 }
