@@ -308,12 +308,12 @@ html {
   left: 100%;
 }
 
-.c-links.show {
+.c-links.is-visible {
   left: 0;
 }
 
 @media (min-width: 640px) {
-  .c-links.show {
+  .c-links.is-visible {
     left: calc(100% - 40rem);
   }
 }

@@ -14,7 +14,7 @@
     }
 }
 
-.c-links.show {
+.c-links.is-visible {
 @include media (smartphone-large) {
         left: calc(100% - 40rem);
     }

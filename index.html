@@ -19,8 +19,8 @@
                     <div class="c-header__logo">
                     </div>
                     <div class="c-header__hamburger">
-                        <button id="menu" class="c-hamburger">
-                            <span id="bar1" class="c-hamburger__bar"></span>
+                        <button id="menu" class="c-hamburger" data-menu>
+                            <span id="bar1" class="c-hamburger__bar" data-bar></span>
                             <!-- <span id="bar2" class="c-hamburger__bar2"></span>
                             <span id="bar3" class="c-hamburger__bar3"></span> -->
                             <span class="c-hamburger__text">Menu</span>
@@ -28,7 +28,7 @@
                     </div>
                 </div>
 
-                <div id="menu-links" class="c-links c-links__hide">
+                <div id="menu-links" class="c-links c-links__hide" data-links>
                     <ul class="c-menu-list">
                         <li class="c-menu-list__item">
                             <a href="#" class="c-menu-list__link">
@@ -40,7 +40,7 @@
                             </a>
                         </li>
                         <li class="c-menu-list__item">
-                            <a href="#" class="c-menu-list__link">
+                            <a href="#" class="c-menu-list__link" data-smooth>
                                 <span class="c-menu-list__title">
                                     <span class="c-menu-list__word" data-hover="Umiejętności">
                                         Umiejętności
@@ -114,5 +114,12 @@
 </body>
 <script src="/assets/scripts/menu.js"></script>
 <script src="/assets/scripts/smooth-scroll.js"></script>
+<script>
+    const menu = new Menu();
+    menu.initialize();
+    const scroll = new Smoothscroll();
+    scroll.initialize();
+</script>
+
 
 </html>
