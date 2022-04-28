@@ -148,7 +148,7 @@ html {
 
 .l-bg {
   padding: 5rem;
-  background-image: url(/assets/img/ziomek-compress.png);
+  background-image: url("/assets/img/my-photo.png");
   background-repeat: no-repeat;
   background-position: 37% 2%;
 }
@@ -163,7 +163,7 @@ html {
 
 @media (min-width: 1024px) {
   .l-bg {
-    background-image: url("/assets/img/ziomek-compress.png");
+    background-image: url("/assets/img/my-photo.png");
     background-repeat: no-repeat;
     background-position: 30% 50%;
     background-size: contain;

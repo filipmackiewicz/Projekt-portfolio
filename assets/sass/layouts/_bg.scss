@@ -6,7 +6,7 @@
     }
 
 @include media (tablet-large) {
-        background-image: url('/assets/img/ziomek-compress.png');
+        background-image: url('/assets/img/my-photo.png');
         background-repeat: no-repeat;
         background-position: 30% 50%;
         background-size: contain;
@@ -14,7 +14,7 @@
 
 padding: 5rem;
 
-    background-image: url(/assets/img/ziomek-compress.png);
+    background-image: url('/assets/img/my-photo.png');
     background-repeat: no-repeat;
     background-position: 37% 2%;
 }
