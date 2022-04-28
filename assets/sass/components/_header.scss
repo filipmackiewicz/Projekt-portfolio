@@ -1,18 +1,17 @@
 .c-header {
     display: flex;
     justify-content: space-between;
+}
 
+.c-header__logo {
+    width: 5rem;
+    height: 4rem;
 
-    &__logo {
-        width: 5rem;
-        height: 4rem;
+    cursor: pointer;
 
-        cursor: pointer;
+    background: url('/assets/img/FM-logo.png');
 
-        background: url('/assets/img/FM-logo.png');
-    }
-
-    &__logo:before {
+    &::before {
         position: absolute;
         z-index: -1;
 
@@ -24,15 +23,14 @@
         margin-left: -1.1rem;
 
         content: '';
-
         transition: transform .3s ease-in;
 
         border-radius: 3.5rem;
         border-bottom-left-radius: 0;
         background: $color-blue;
     }
+}
 
-    &__logo:hover::before {
-        transform: rotate(-180deg);
-    }
+.c-header__logo:hover::before {
+    transform: rotate(-180deg);
 }

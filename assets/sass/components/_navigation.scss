@@ -1,26 +1,27 @@
-@import '../base/bounce';
+@import '../base/animations';
 .c-navigation {
     position: absolute;
     bottom: 10%;
     left: 50%;
 
     height: 4rem;
-    &__link {
-        display: flex;
-        align-items: center;
+}
 
-        height: 100%;
-        padding: .5rem;
+.c-navigation__link {
+    display: flex;
+    align-items: center;
 
-        text-decoration: none;
+    height: 100%;
+    padding: .5rem;
 
-        border-radius: 2.5rem;
-        background-color: $color-blue;
+    text-decoration: none;
 
-        & > i {
-            animation: bounce 2s infinite;
+    border-radius: 2.5rem;
+    background-color: $color-blue;
+}
 
-            color: $color-white;
-        }
-    }
+.c-navigation-link__icon {
+    animation: bounce 2s infinite;
+
+    color: $color-white;
 }

@@ -1,4 +1,10 @@
 .c-info {
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: 100vh;
+
     @include media (tablet-large) {
         min-height: 85.7vh;
 
@@ -7,30 +13,23 @@
         flex-basis: 60%;
     }
 
-display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    min-height: 100vh;
-
     flex-basis: 100%;
-
-    &__header {
-        @include media (smartphone) {
-            font-size: 7rem;
-        }
-
+}
+.c-info__header {
 position: relative;
 
-        padding-bottom: 1rem;
+    padding-bottom: 1rem;
 
-        font-family: $font-family-bold;
-        font-size: 4.5rem;
+    font-family: $font-family-bold;
+    font-size: 4.5rem;
 
-        color: $color-gray-lighter;
+    color: $color-gray-lighter;
+
+    @include media (smartphone) {
+        font-size: 7rem;
     }
 
-    &__header::after {
+    &::after {
         position: absolute;
         bottom: 1%;
         left: 0;
@@ -42,24 +41,23 @@ position: relative;
 
         background: $color-red;
     }
+}
 
-    &__list {
-        margin-top: 3.125rem;
+.c-info__list {
+    margin-top: 3.125rem;
 
-        list-style-type: none;
+    list-style-type: none;
+}
 
-        & li {
-            width: 3.5rem;
-            height: 3.5rem;
+.c-info-list__item {
+    width: 3.5rem;
+    height: 3.5rem;
 
-            font-size: 3.5rem;
+    font-size: 3.5rem;
 
-            color: $color-white;
-            border-radius: 50%;
-        }
-
-        & li:hover {
-            background: $color-blue;
-        }
-    }
+    color: $color-white;
+    border-radius: 50%;
+}
+.c-info-list__item:hover {
+    background: $color-blue;
 }
