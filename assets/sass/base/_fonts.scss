@@ -68,11 +68,7 @@
     font-style: normal;
 
     font-display: block;
-    src: url('/assets/font-icon/fm-icon.eot?d1rojn');
-    src: url('/assets/font-icon/fm-icon.eot?d1rojn#iefix') format('embedded-opentype'),
-    url('/assets/font-icon/fm-icon.ttf?d1rojn') format('truetype'),
-    url('/assets/font-icon/fm-icon.woff?d1rojn') format('woff'),
-    url('/assets/font-icon/fm-icon.svg?d1rojn#fm-icon') format('svg');
+    src: url('/assets/font-icon/fm-icon.woff?d1rojn') format('woff');
 }
 
 [class^='icon-'],
@@ -121,18 +117,18 @@
     content: '\e907';
 }
 
-.icon-social-facebook-circular::before {
+.icon-facebook-circular::before {
     content: '\e908';
 }
 
-.icon-social-github-circular::before {
+.icon-github-circular::before {
     content: '\e909';
 }
 
-.icon-social-linkedin-circular::before {
+.icon-linkedin-circular::before {
     content: '\e90a';
 }
 
-.icon-social-twitter-circular::before {
+.icon-twitter-circular::before {
     content: '\e90b';
 }
