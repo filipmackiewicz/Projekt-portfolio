@@ -1,14 +1,14 @@
 class Menu {
     constructor () {
         this.UiSelectors = {
-            bar: '[data-bar]',
+            bars: '[data-bars]',
             links: '[data-links]',
             menu: '[data-menu]',
         }
     }
 
     initialize() {
-        this.bar = document.querySelector(this.UiSelectors.bar);
+        this.bars = document.querySelector(this.UiSelectors.bars);
         this.links = document.querySelector(this.UiSelectors.links);
         this.menu = document.querySelector(this.UiSelectors.menu);
         this.addEventListeners();
@@ -16,7 +16,7 @@ class Menu {
 
     showMenu() {
         this.links.classList.toggle('is-visible');
-        this.bar.classList.toggle('animate');
+        this.bars.classList.toggle('animate');
     }
 
     addEventListeners() {

@@ -1,20 +1,9 @@
 .l-bg {
-    @include media (desktop-small) {
-        padding-top: 5rem;
-        padding-right: 29.2rem;
-        padding-left: 29.2rem;
-    }
-
-@include media (tablet-large) {
-        background-image: url('/assets/img/my-photo.png');
-        background-repeat: no-repeat;
-        background-position: 30% 50%;
-        background-size: contain;
-    }
-
 padding: 5rem;
 
-    background-image: url('/assets/img/my-photo.png');
-    background-repeat: no-repeat;
-    background-position: 37% 2%;
+    background: url('/assets/img/my-photo.png') no-repeat 37% 2%;
+
+    @include media (tablet-large) {
+        background: url('/assets/img/my-photo.png') no-repeat 30% 50%/contain;
+    }
 }

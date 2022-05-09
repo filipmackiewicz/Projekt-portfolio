@@ -17,14 +17,6 @@
 }
 
 @font-face {
-    font-family: 'oliviar-black';
-    font-style: normal;
-
-    font-display: swap;
-    src: url('/assets/fonts/oliviar-sans-black.otf');
-}
-
-@font-face {
     font-family: 'oliviar-light';
     font-weight: 300;
     font-style: normal;
@@ -43,32 +35,12 @@
 }
 
 @font-face {
-    font-family: 'oliviar-thin';
-    font-weight: 100;
-    font-style: normal;
-
-    font-display: swap;
-    src: url('/assets/fonts/oliviar-sans-thin.otf');
-}
-
-@font-face {
-    font-family: 'oliviar-ultra-light';
-    font-weight: 200;
-    font-style: normal;
-
-    font-display: swap;
-    src: url('/assets/fonts/oliviar-sans-ultralight.otf');
-}
-
-
-
-@font-face {
     font-family: 'fm-icon';
     font-weight: normal;
     font-style: normal;
 
     font-display: block;
-    src: url('/assets/font-icon/fm-icon.woff?d1rojn') format('woff');
+    src: url('/assets/fonts/fm-icon.woff?d1rojn') format('woff');
 }
 
 [class^='icon-'],
