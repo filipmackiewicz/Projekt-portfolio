@@ -1,0 +1,10 @@
+//bounce animation
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    15% {
+        transform: translateY(-.8rem);
+    }
+}

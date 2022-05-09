@@ -1,4 +1,4 @@
-@mixin break($breakpoint) {
+@mixin media($breakpoint) {
     $size: map-get($breakpoints, $breakpoint);
 
     @if($size) {
@@ -8,6 +8,6 @@
     }
 
     @else {
-        @error '"#{$breakpoint}" - Brak podanej wartości!';
+        @error '"#{$breakpoint}" - No value provided!';
     }
 }

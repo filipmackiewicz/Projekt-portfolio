@@ -1,0 +1,65 @@
+.c-menu-list {
+    position: relative;
+    top: 50%;
+
+    max-width: 115rem;
+    margin: 0 auto;
+    padding: 0 3rem 0 3rem;
+
+    list-style: none;
+
+    transform: translateY(-50%);
+}
+
+.c-menu-list__item {
+    display: inline-block;
+
+    min-width: 100%;
+
+    white-space: nowrap;
+}
+
+.c-menu-list__link {
+    display: block;
+
+    padding: .6rem 3rem .3rem;
+
+    font-family: $font-family-regular;
+    font-size: 3.6rem;
+
+    text-align: left;
+    text-decoration: none;
+
+    color: $color-white;
+
+    &:hover,
+    &:focus {
+        .c-menu-list__word {
+            transform: translate3d(0, -105%, 0);
+        }
+    }
+}
+
+.c-menu-list__title {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.c-menu-list__word {
+    position: relative;
+
+    display: inline-block;
+
+    transition: transform .3s;
+
+    color: $color-white;
+
+    &::before {
+        position: absolute;
+        top: 105%;
+
+        content: attr(data-hover);
+
+        color: $color-blue-lighter;
+    }
+}

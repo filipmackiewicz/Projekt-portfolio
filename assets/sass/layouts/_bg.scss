@@ -1,15 +1,20 @@
 .l-bg {
-    padding: 3.125rem;
-    background-image: url('/assets/img/ziomek-compress.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 30% 50%;
-
-
-
-    @include break (tablet) {
-        padding-left: 18.125rem;
-        padding-right: 18.125rem;
+    @include media (desktop-small) {
         padding-top: 5rem;
+        padding-right: 29.2rem;
+        padding-left: 29.2rem;
     }
+
+@include media (tablet-large) {
+        background-image: url('/assets/img/my-photo.png');
+        background-repeat: no-repeat;
+        background-position: 30% 50%;
+        background-size: contain;
+    }
+
+padding: 5rem;
+
+    background-image: url('/assets/img/my-photo.png');
+    background-repeat: no-repeat;
+    background-position: 37% 2%;
 }

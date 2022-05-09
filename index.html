@@ -11,73 +11,115 @@
     <title>Filip Mackiewicz</title>
 </head>
 
-<body id="body">
-    <div class="l-container l-bg">
-        <header class="l-header" id="header">
-            <div class="c-header">
-                <div class="c-header__logo">
+<body class="l-body">
+    <div class="l-container">
+        <header class="c-header">
+            <nav class="l-menu">
+                <div class="c-header">
+                    <div class="c-header__logo">
+                    </div>
+                    <div class="c-header__hamburger">
+                        <button class="c-hamburger" data-menu>
+                            <span class="c-hamburger__bar" data-bar></span>
+                            <span class="c-hamburger__text">Menu</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="c-header__hamburger">
-                    <button id="menu" class="c-hamburger">
-                        <span id="bar1" class="c-hamburger__bar1"></span>
-                        <span id="bar2" class="c-hamburger__bar2"></span>
-                        <span id="bar3" class="c-hamburger__bar3"></span>
-                        <span class="c-hamburger__text">Menu</span>
-                    </button>
+
+                <div class="c-menu-links c-menu-links__invisible" data-links>
+                    <ul class="c-menu-list">
+                        <li class="c-menu-list__item">
+                            <a href="#" class="c-menu-list__link">
+                                <span class="c-menu-list__title">
+                                    <span class="c-menu-list__word" data-hover="O mnie">
+                                        O mnie
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="c-menu-list__item">
+                            <a href="#" class="c-menu-list__link" data-smooth>
+                                <span class="c-menu-list__title">
+                                    <span class="c-menu-list__word" data-hover="Umiejętności">
+                                        Umiejętności
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="c-menu-list__item">
+                            <a href="#" class="c-menu-list__link">
+                                <span class="c-menu-list__title">
+                                    <span class="c-menu-list__word" data-hover="Doświadczenie">
+                                        Doświadczenie
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="c-menu-list__item">
+                            <a href="#" class="c-menu-list__link">
+                                <span class="c-menu-list__title">
+                                    <span class="c-menu-list__word" data-hover="Portfolio">
+                                        Portfolio
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="c-menu-list__item">
+                            <a href="#" class="c-menu-list__link">
+                                <span class="c-menu-list__title">
+                                    <span class="c-menu-list__word" data-hover="Kontakt">
+                                        Kontakt
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
+            </nav>
         </header>
-        <div id="menulinks" class="c-links c-links__hide">
-            <ul class="c-menu">
-                <li class="c-menu__item">
-                    <a href="#" class="c-menu__link">
-                        <span class="c-menu__title">
-                            <span class="c-menu__word" data-hover="O mnie">
-                                O mnie
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="c-menu__item">
-                    <a href="#" class="c-menu__link">
-                        <span class="c-menu__title">
-                            <span class="c-menu__word" data-hover="Umiejętności">
-                                Umiejętności
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="c-menu__item">
-                    <a href="#" class="c-menu__link">
-                        <span class="c-menu__title">
-                            <span class="c-menu__word" data-hover="Doświadczenie">
-                                Doświadczenie
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="c-menu__item">
-                    <a href="#" class="c-menu__link">
-                        <span class="c-menu__title">
-                            <span class="c-menu__word" data-hover="Portfolio">
-                                Portfolio
-                            </span>
-                        </span>
-                    </a>
-                </li>
-                <li class="c-menu__item">
-                    <a href="#" class="c-menu__link">
-                        <span class="c-menu__title">
-                            <span class="c-menu__word" data-hover="Kontakt">
-                                Kontakt
-                            </span>
-                        </span>
-                    </a>
-                </li>
-            </ul>
+    </div>
+    <div class="l-container l-bg">
+        <section class="l-about-me">
+            <div class="c-info">
+                <h1 class="c-info__header">Filip <br /> Mackiewicz</h1>
+                <ul class="c-info__list">
+                    <li class="c-info-list__item icon-github-circular"></li>
+                    <li class="c-info-list__item icon-twitter-circular"></li>
+                    <li class="c-info-list__item icon-linkedin-circular"></li>
+                    <li class="c-info-list__item icon-facebook-circular"></li>
+                </ul>
+            </div>
+            <div class="c-about-me">
+                <p class="c-about-me__title">Poznaj mnie bliżej</p>
+                <p class="c-about-me__subtitle">Junior front-end developer
+                </p>
+                <p class="c-about-me__description">Obecnie pracuje jako PrestaShop developer, a swoją przygodę z
+                    programowaniem
+                    stron internetowych zacząłem na pierwszym roku studiów, gdzie na potrzeby projektu
+                    stworzyłem
+                    swoją
+                    pierwszą stronę internetową.</p>
+                <a href="#" class="c-about-me__link">Moje umiejętności <i
+                        class="c-about-me-link__icon icon-arrow-right"></i></a>
+            </div>
+        </section>
+        <div class="c-navigation">
+            <a href="#" class="c-navigation__link"><i class="c-navigation-link__icon icon-arrow-down-skill"></i></a>
         </div>
+    </div>
+
+
+
     </div>
 </body>
 <script src="/assets/scripts/menu.js"></script>
+<script src="/assets/scripts/smooth-scroll.js"></script>
+<script>
+    const menu = new Menu();
+    menu.initialize();
+    const scroll = new Smoothscroll();
+    scroll.initialize();
+</script>
+
 
 </html>

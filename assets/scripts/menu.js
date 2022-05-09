@@ -1,11 +1,26 @@
-const menu = document.getElementById('menu');
-const links = document.getElementById('menulinks');
-const bar1 = document.getElementById('bar1');
-const bar2 = document.getElementById('bar2');
-const bar3 = document.getElementById('bar3');
-menu.addEventListener("click", function(){
-    bar1.classList.toggle('animate');
-    bar3.classList.toggle('animate');
-    bar2.classList.toggle('animate');
-    links.classList.toggle('show');
-})
+class Menu {
+    constructor () {
+        this.UiSelectors = {
+            bar: '[data-bar]',
+            links: '[data-links]',
+            menu: '[data-menu]',
+        }
+    }
+
+    initialize() {
+        this.bar = document.querySelector(this.UiSelectors.bar);
+        this.links = document.querySelector(this.UiSelectors.links);
+        this.menu = document.querySelector(this.UiSelectors.menu);
+        this.addEventListeners();
+    }
+
+    showMenu() {
+        this.links.classList.toggle('is-visible');
+        this.bar.classList.toggle('animate');
+    }
+
+    addEventListeners() {
+        this.menu.addEventListener('click', () => this.showMenu());
+    }
+
+}

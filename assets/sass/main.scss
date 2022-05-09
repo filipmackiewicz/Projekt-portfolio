@@ -7,10 +7,15 @@
 //layouts
 @import './layouts/container';
 @import './layouts/bg';
-@import './layouts/header';
+@import './layouts/menu';
+@import './layouts/about-me';
+@import './layouts/body';
 
 //components
 @import './components/header';
 @import './components/hamburger';
-@import './components/links';
-@import './components/menu';
+@import './components/menu-links';
+@import './components/menu-list';
+@import './components/about-me';
+@import './components/info';
+@import './components/navigation';
