@@ -3,7 +3,7 @@ class Menu {
         this.UiSelectors = {
             bars: '[data-bars]',
             links: '[data-links]',
-            menu: '[data-menu]',
+            menu: '[data-menu]'
         }
     }
 
