@@ -12,21 +12,21 @@
 </head>
 
 <body class="l-body">
-    <div class="l-container">
-        <header class="c-header">
-            <nav class="l-menu">
+    <div class="l-page-container">
+        <header class="l-header">
+            <nav class="c-menu">
                 <div class="c-header">
                     <div class="c-header__logo">
                     </div>
                     <div class="c-header__hamburger">
                         <button class="c-hamburger" data-menu>
-                            <span class="c-hamburger__bar" data-bar></span>
+                            <span class="c-hamburger__bars" data-bars></span>
                             <span class="c-hamburger__text">Menu</span>
                         </button>
                     </div>
                 </div>
 
-                <div class="c-menu-links c-menu-links__invisible" data-links>
+                <div class="c-menu-links" data-links>
                     <ul class="c-menu-list">
                         <li class="c-menu-list__item">
                             <a href="#" class="c-menu-list__link">
@@ -77,49 +77,45 @@
                 </div>
             </nav>
         </header>
-    </div>
-    <div class="l-container l-bg">
-        <section class="l-about-me">
-            <div class="c-info">
-                <h1 class="c-info__header">Filip <br /> Mackiewicz</h1>
-                <ul class="c-info__list">
-                    <li class="c-info-list__item icon-github-circular"></li>
-                    <li class="c-info-list__item icon-twitter-circular"></li>
-                    <li class="c-info-list__item icon-linkedin-circular"></li>
-                    <li class="c-info-list__item icon-facebook-circular"></li>
-                </ul>
+        <div class="l-bg">
+            <section class="l-about-me">
+                <div class="c-info">
+                    <h1 class="c-info__header">Filip <br /> Mackiewicz</h1>
+                    <ul class="c-info__list">
+                        <li class="c-info-list__item icon-github-circular"></li>
+                        <li class="c-info-list__item icon-twitter-circular"></li>
+                        <li class="c-info-list__item icon-linkedin-circular"></li>
+                        <li class="c-info-list__item icon-facebook-circular"></li>
+                    </ul>
+                </div>
+                <div class="c-about-me">
+                    <p class="c-about-me__title">Poznaj mnie bliżej</p>
+                    <p class="c-about-me__subtitle">Junior front-end developer
+                    </p>
+                    <p class="c-about-me__description">Obecnie pracuje jako PrestaShop developer, a swoją przygodę z
+                        programowaniem
+                        stron internetowych zacząłem na pierwszym roku studiów, gdzie na potrzeby projektu
+                        stworzyłem
+                        swoją
+                        pierwszą stronę internetową.</p>
+                    <a href="#" class="c-about-me__link">Moje umiejętności <i
+                            class="c-about-me-link__icon icon-arrow-right"></i></a>
+                </div>
+            </section>
+            <div class="c-navigation">
+                <a href="#" class="c-navigation__link"><i class="c-navigation-link__icon icon-arrow-down-skill"></i></a>
             </div>
-            <div class="c-about-me">
-                <p class="c-about-me__title">Poznaj mnie bliżej</p>
-                <p class="c-about-me__subtitle">Junior front-end developer
-                </p>
-                <p class="c-about-me__description">Obecnie pracuje jako PrestaShop developer, a swoją przygodę z
-                    programowaniem
-                    stron internetowych zacząłem na pierwszym roku studiów, gdzie na potrzeby projektu
-                    stworzyłem
-                    swoją
-                    pierwszą stronę internetową.</p>
-                <a href="#" class="c-about-me__link">Moje umiejętności <i
-                        class="c-about-me-link__icon icon-arrow-right"></i></a>
-            </div>
-        </section>
-        <div class="c-navigation">
-            <a href="#" class="c-navigation__link"><i class="c-navigation-link__icon icon-arrow-down-skill"></i></a>
         </div>
     </div>
 
-
-
-    </div>
+    <script src="/assets/scripts/menu.js"></script>
+    <script src="/assets/scripts/smooth-scroll.js"></script>
+    <script>
+        const menu = new Menu();
+        menu.initialize();
+        const scroll = new Smoothscroll();
+        scroll.initialize();
+    </script>
 </body>
-<script src="/assets/scripts/menu.js"></script>
-<script src="/assets/scripts/smooth-scroll.js"></script>
-<script>
-    const menu = new Menu();
-    menu.initialize();
-    const scroll = new Smoothscroll();
-    scroll.initialize();
-</script>
-
 
 </html>

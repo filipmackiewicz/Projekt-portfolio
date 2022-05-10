@@ -5,9 +5,8 @@
 @import './base/fonts';
 
 //layouts
-@import './layouts/container';
+@import './layouts/page-container';
 @import './layouts/bg';
-@import './layouts/menu';
 @import './layouts/about-me';
 @import './layouts/body';
 
@@ -19,3 +18,7 @@
 @import './components/about-me';
 @import './components/info';
 @import './components/navigation';
+@import './components/menu';
+
+//animations
+@import './base/animations';

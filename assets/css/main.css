@@ -28,13 +28,6 @@ html {
 }
 
 @font-face {
-  font-family: 'oliviar-black';
-  font-style: normal;
-  font-display: swap;
-  src: url("/assets/fonts/oliviar-sans-black.otf");
-}
-
-@font-face {
   font-family: 'oliviar-light';
   font-weight: 300;
   font-style: normal;
@@ -51,27 +44,11 @@ html {
 }
 
 @font-face {
-  font-family: 'oliviar-thin';
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-  src: url("/assets/fonts/oliviar-sans-thin.otf");
-}
-
-@font-face {
-  font-family: 'oliviar-ultra-light';
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-  src: url("/assets/fonts/oliviar-sans-ultralight.otf");
-}
-
-@font-face {
   font-family: 'fm-icon';
   font-weight: normal;
   font-style: normal;
   font-display: block;
-  src: url("/assets/font-icon/fm-icon.woff?d1rojn") format("woff");
+  src: url("/assets/fonts/fm-icon.woff?d1rojn") format("woff");
 }
 
 [class^='icon-'],
@@ -134,12 +111,12 @@ html {
   content: '\e90b';
 }
 
-.l-container {
+.l-page-container {
   padding: 0;
 }
 
 @media (min-width: 800px) {
-  .l-container {
+  .l-page-container {
     padding-top: 5rem;
     padding-right: 18.125rem;
     padding-left: 18.125rem;
@@ -148,30 +125,13 @@ html {
 
 .l-bg {
   padding: 5rem;
-  background-image: url("/assets/img/my-photo.png");
-  background-repeat: no-repeat;
-  background-position: 37% 2%;
-}
-
-@media (min-width: 1280px) {
-  .l-bg {
-    padding-top: 5rem;
-    padding-right: 29.2rem;
-    padding-left: 29.2rem;
-  }
+  background: url("/assets/img/my-photo.png") no-repeat 37% 2%;
 }
 
 @media (min-width: 1024px) {
   .l-bg {
-    background-image: url("/assets/img/my-photo.png");
-    background-repeat: no-repeat;
-    background-position: 30% 50%;
-    background-size: contain;
+    background: url("/assets/img/my-photo.png") no-repeat 30% 50%/contain;
   }
-}
-
-.l-menu {
-  width: 100%;
 }
 
 .l-about-me {
@@ -186,9 +146,7 @@ html {
   overflow: hidden;
   overflow-y: scroll;
   font-size: 1.6rem;
-  background-image: url("/assets/img/bg-page-desktop.jpg");
-  background-position: center;
-  background-size: cover;
+  background: url("/assets/img/bg-page-desktop.jpg") center/cover;
 }
 
 .c-header {
@@ -204,7 +162,7 @@ html {
   width: 5rem;
   height: 4rem;
   cursor: pointer;
-  background: url("/assets/img/FM-logo.png");
+  background: url("/assets/img/fm-logo.png");
 }
 
 .c-header__logo::before {
@@ -250,7 +208,7 @@ html {
   color: #e6e5df;
 }
 
-.c-hamburger__bar {
+.c-hamburger__bars {
   background: white;
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
@@ -261,12 +219,12 @@ html {
           transform: rotate(180deg);
 }
 
-.c-hamburger__bar::after, .c-hamburger__bar::before {
+.c-hamburger__bars::after, .c-hamburger__bars::before {
   width: 2rem;
   height: 0.2rem;
 }
 
-.c-hamburger__bar::before {
+.c-hamburger__bars::before {
   content: "";
   position: absolute;
   left: 0;
@@ -278,7 +236,7 @@ html {
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.c-hamburger__bar::after {
+.c-hamburger__bars::after {
   content: "";
   position: absolute;
   left: 0;
@@ -290,7 +248,7 @@ html {
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.c-hamburger:hover .c-hamburger__bar {
+.c-hamburger:hover .c-hamburger__bars {
   width: 2rem;
 }
 
@@ -298,14 +256,11 @@ html {
   position: absolute;
   z-index: 1;
   top: 0;
+  left: 100%;
   height: 100vh;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
   background: #2c55c8;
-}
-
-.c-menu-links__invisible {
-  left: 100%;
 }
 
 .c-menu-links.is-visible {
@@ -538,28 +493,6 @@ html {
   background: #2c55c8;
 }
 
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  15% {
-    -webkit-transform: translateY(-0.8rem);
-            transform: translateY(-0.8rem);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  15% {
-    -webkit-transform: translateY(-0.8rem);
-            transform: translateY(-0.8rem);
-  }
-}
-
 .c-navigation {
   position: absolute;
   bottom: 10%;
@@ -585,5 +518,31 @@ html {
   -webkit-animation: bounce 2s infinite;
           animation: bounce 2s infinite;
   color: #fff;
+}
+
+.c-menu {
+  width: 100%;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  15% {
+    -webkit-transform: translateY(-0.8rem);
+            transform: translateY(-0.8rem);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  15% {
+    -webkit-transform: translateY(-0.8rem);
+            transform: translateY(-0.8rem);
+  }
 }
 /*# sourceMappingURL=main.css.map */
