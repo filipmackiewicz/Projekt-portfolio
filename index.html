@@ -13,7 +13,7 @@
 
 <body class="l-body">
     <div class="l-page-container">
-        <header class="l-header">
+        <header class="l-header" class="aboutme">
             <nav class="c-menu">
                 <div class="c-header">
                     <div class="c-header__logo">
@@ -29,7 +29,7 @@
                 <div class="c-menu-links" data-links>
                     <ul class="c-menu-list">
                         <li class="c-menu-list__item">
-                            <a href="#" class="c-menu-list__link">
+                            <a href="#skills" class="c-menu-list__link" data-link>
                                 <span class="c-menu-list__title">
                                     <span class="c-menu-list__word" data-hover="O mnie">
                                         O mnie
@@ -38,7 +38,7 @@
                             </a>
                         </li>
                         <li class="c-menu-list__item">
-                            <a href="#" class="c-menu-list__link" data-smooth>
+                            <a href="#skills" class="c-menu-list__link" data-link>
                                 <span class="c-menu-list__title">
                                     <span class="c-menu-list__word" data-hover="Umiejętności">
                                         Umiejętności
@@ -47,7 +47,7 @@
                             </a>
                         </li>
                         <li class="c-menu-list__item">
-                            <a href="#" class="c-menu-list__link">
+                            <a href="#" class="c-menu-list__link" data-link>
                                 <span class="c-menu-list__title">
                                     <span class="c-menu-list__word" data-hover="Doświadczenie">
                                         Doświadczenie
@@ -106,18 +106,32 @@
                 <a href="#" class="c-navigation__link"><i class="c-navigation-link__icon icon-arrow-down-skill"></i></a>
             </div>
         </div>
-        <section class="l-skills">
-
+        <section class="l-skills" id="skills">
+            <div class="c-offer">
+                <p class="c-offer__subtitle">Moje umiejętności</p>
+                <h2 class="c-offer__title">Co oferuję?</h2>
+                <p class="c-offer__description">Obecnie pracuje jako PrestaShop developer, a swoją przygodę z
+                    programowaniem stron internetowych zacząłem na pierwszym roku studiów, gdzie na potrzeby projektu
+                    stworzyłem swoją pierwszą stronę internetową. Od tego momentu stwierdziłem, że jest to coś co mi się
+                    bardzo podoba i zacząłem nauke w tym kierunku we własnym zakresie.<br /> Stworzyłem kilka projektów
+                    używając różnych technologii, a swoją pracę licencjacką oparłem na React.js oraz Django.<br /> W
+                    wolnym
+                    czasie, realizuje własne projekty oraz ucze się nowych rozwiązań, które pozwalają usprawnić oraz
+                    urozmaicić moją pracę.</p>
+            </div>
+            <div class="c-skills">
+                <p class="test">testtestestsetse</p>
+            </div>
         </section>
     </div>
 
     <script src="/assets/scripts/menu.js"></script>
-    <script src="/assets/scripts/smooth-scroll.js"></script>
+    <!-- <script src="/assets/scripts/smooth-scroll.js"></script> -->
     <script>
         const menu = new Menu();
         menu.initialize();
-        const scroll = new Smoothscroll();
-        scroll.initialize();
+        // const scroll = new Smoothscroll();
+        // scroll.initialize();
     </script>
 </body>
 

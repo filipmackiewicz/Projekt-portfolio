@@ -152,6 +152,16 @@ html {
   margin-top: 2rem;
 }
 
+.l-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
 .c-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -525,6 +535,59 @@ html {
 
 .c-menu {
   width: 100%;
+}
+
+.c-offer {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.c-offer__subtitle {
+  position: relative;
+  padding-left: 2rem;
+  font-family: "oliviar-semi-bold";
+  font-size: 1.4rem;
+  cursor: default;
+  text-transform: uppercase;
+  color: #b4b3b1;
+}
+
+.c-offer__subtitle::before {
+  position: absolute;
+  top: .7rem;
+  left: 0;
+  width: 1.5rem;
+  height: .4rem;
+  content: '';
+  background: #cb4335;
+}
+
+.c-offer__title {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-family: "oliviar-bold";
+  font-size: 7.2rem;
+  cursor: default;
+  color: #e6e5df;
+}
+
+.c-offer__description {
+  position: relative;
+  padding-left: 7rem;
+  font-family: "oliviar-light";
+  font-size: 1.6rem;
+  cursor: default;
+  color: #b4b3b1;
+}
+
+.c-offer__description::before {
+  position: absolute;
+  top: .7rem;
+  left: 0;
+  width: 5.5rem;
+  height: .5rem;
+  content: '';
+  background: #cb4335;
 }
 
 @-webkit-keyframes bounce {

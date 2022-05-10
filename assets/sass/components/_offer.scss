@@ -1,0 +1,68 @@
+.c-offer {
+    flex-basis: 50%;
+}
+
+.c-offer__subtitle {
+    position: relative;
+
+    padding-left: 2rem;
+
+    font-family: $font-family-semibold;
+    font-size: 1.4rem;
+
+    cursor: default;
+    text-transform: uppercase;
+
+    color: $color-gray;
+}
+
+.c-offer__subtitle::before {
+    position: absolute;
+    top: .7rem;
+    left: 0;
+
+    width: 1.5rem;
+    height: .4rem;
+
+    content: '';
+
+    background: $color-red;
+}
+
+.c-offer__title {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    font-family: $font-family-bold;
+    font-size: 7.2rem;
+
+    cursor: default;
+
+    color: $color-gray-lighter;
+}
+
+.c-offer__description {
+    position: relative;
+
+    padding-left: 7rem;
+
+    font-family: $font-family-light;
+    font-size: 1.6rem;
+
+    cursor: default;
+
+    color: $color-gray;
+}
+
+.c-offer__description::before {
+    position: absolute;
+    top: .7rem;
+    left: 0;
+
+    width: 5.5rem;
+    height: .5rem;
+
+    content: '';
+
+    background: $color-red;
+}
