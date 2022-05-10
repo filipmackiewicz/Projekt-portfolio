@@ -124,7 +124,6 @@ html {
 }
 
 .l-bg {
-  padding: 5rem;
   background: url("/assets/img/my-photo.png") no-repeat 37% 2%;
 }
 
@@ -147,6 +146,10 @@ html {
   overflow-y: scroll;
   font-size: 1.6rem;
   background: url("/assets/img/bg-page-desktop.jpg") center/cover;
+}
+
+.l-header {
+  margin-top: 2rem;
 }
 
 .c-header {
@@ -445,7 +448,7 @@ html {
 
 @media (min-width: 1024px) {
   .c-info {
-    min-height: 85.7vh;
+    min-height: 88.8vh;
     background: none;
     -ms-flex-preferred-size: 60%;
         flex-basis: 60%;
