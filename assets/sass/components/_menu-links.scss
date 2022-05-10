@@ -2,6 +2,7 @@
     position: absolute;
     z-index: 1;
     top: 0;
+    left: 100%;
 
     height: 100vh;
 
@@ -10,15 +11,11 @@
     background: $color-blue;
 }
 
-.c-menu-links__invisible {
-    left: 100%;
-}
-
 .c-menu-links.is-visible {
-@include media (smartphone-large) {
+left: 0;
+
+    @include media (smartphone-large) {
         left: calc(100% - 40rem);
     }
-
-    left: 0;
 }
 
