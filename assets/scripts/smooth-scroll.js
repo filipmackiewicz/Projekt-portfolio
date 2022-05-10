@@ -1,12 +1,12 @@
 class Smoothscroll {
     constructor () {
-        this.UiSelectors = {
+        this.Selectors = {
             smothItems: '[data-smooth]'
         }
     }
 
     initialize() {
-        this.smothItems = document.querySelector(this.UiSelectors.smothItems);
+        this.smothItems = document.querySelector(this.Selectors.smothItems);
         this.addEventListeners();
     }
 
@@ -20,12 +20,14 @@ class Smoothscroll {
             const progress = currentTime - start;
             if (currentPos < pos) {
                 window.scrollTo(0, ((pos - currentPos) * progress / time) + currentPos);
-            } else {
+            } 
+            else {
                 window.scrollTo(0, currentPos - ((currentPos - pos) * progress / time));
             }
             if (progress < time) {
                 window.requestAnimationFrame(step);
-            } else {
+            } 
+            else {
                 window.scrollTo(0, pos);
             }
         });
