@@ -1,4 +1,12 @@
 .c-skill {
     display: flex;
     flex-direction: column;
+    height: 400px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.c-skill::-webkit-scrollbar { 
+    display: none;
 }

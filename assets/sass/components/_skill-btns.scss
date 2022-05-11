@@ -10,3 +10,18 @@
     cursor: pointer;
     text-transform: uppercase;
 }
+
+.c-box-skill-btns__btn2 {
+    background: url('/assets/img/rozwijak.png');
+    height: 3.2rem;
+    width: 3.2rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all .3s ease-in;
+    margin-right: .5rem;
+}
+
+.c-box-skill-btns__btn2.is-open {
+    transform: rotate(180deg);
+}

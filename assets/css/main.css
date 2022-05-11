@@ -11,6 +11,26 @@ html {
   font-size: 10px;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: .5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #546bab;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2c55c8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @font-face {
   font-family: 'oliviar-regular';
   font-weight: 400;
@@ -160,6 +180,11 @@ html {
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+}
+
+.l-skill {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 
 .c-header {
@@ -540,6 +565,7 @@ html {
 .c-offer {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  padding-right: 15rem;
 }
 
 .c-offer__subtitle {
@@ -590,10 +616,10 @@ html {
   background: #cb4335;
 }
 
-.c-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.c-box-skill {
+  border-bottom: solid 1px #b4b3b1;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .c-box-skill__text {
@@ -613,8 +639,14 @@ html {
   color: #b4b3b1;
   font-size: 1.6rem;
   font-family: "oliviar-light";
-  -webkit-transition: all .5s linear;
-  transition: all .5s linear;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  display: none;
+  padding-right: .5rem;
+}
+
+.c-box__skill-description.is-open {
+  display: block;
 }
 
 .c-skill-btns {
@@ -634,6 +666,23 @@ html {
   text-transform: uppercase;
 }
 
+.c-box-skill-btns__btn2 {
+  background: url("/assets/img/rozwijak.png");
+  height: 3.2rem;
+  width: 3.2rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  margin-right: .5rem;
+}
+
+.c-box-skill-btns__btn2.is-open {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .c-skill-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -646,12 +695,13 @@ html {
 
 .c-skill-nav__up,
 .c-skill-nav__down {
-  border: solid 0.1rem #fff;
-  border-radius: 3.7rem;
+  border: solid 0.1rem #b4b3b1;
+  border-radius: 3rem;
   font-size: 1.9rem;
-  padding: 1.1rem;
+  padding: 1rem;
   cursor: pointer;
   margin-right: 1.5rem;
+  background: transparent;
 }
 
 .c-skill-nav__up i,
@@ -667,6 +717,14 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 400px;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.c-skill::-webkit-scrollbar {
+  display: none;
 }
 
 @-webkit-keyframes bounce {

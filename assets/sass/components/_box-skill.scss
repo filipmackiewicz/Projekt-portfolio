@@ -1,9 +1,7 @@
-.c-box {
-display: flex;
-}
-
 .c-box-skill {
-
+    border-bottom: solid 1px $color-gray;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 
 .c-box-skill__text {
@@ -23,5 +21,11 @@ display: flex;
     color: $color-gray;
     font-size: 1.6rem;
     font-family: $font-family-light;
-    transition: all .5s linear;
+    transition: all .5s ease-in;
+    display: none;
+    padding-right: .5rem;
+}
+
+.c-box__skill-description.is-open {
+    display: block;
 }
