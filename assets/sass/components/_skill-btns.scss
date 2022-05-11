@@ -1,0 +1,12 @@
+.c-skill-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-box-skill-btns__btn {
+    background: transparent;
+    border: none;
+    color: $color-red;
+    cursor: pointer;
+    text-transform: uppercase;
+}

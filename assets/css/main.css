@@ -590,6 +590,85 @@ html {
   background: #cb4335;
 }
 
+.c-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-box-skill__text {
+  color: #b4b3b1;
+  font-size: 2.6rem;
+  font-family: "oliviar-regular";
+}
+
+.c-box-skill__text > span {
+  color: #e6e5df;
+  font-size: 3.6rem;
+  font-family: "oliviar-bold";
+  padding-left: 1rem;
+}
+
+.c-box__skill-description {
+  color: #b4b3b1;
+  font-size: 1.6rem;
+  font-family: "oliviar-light";
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+.c-skill-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-box-skill-btns__btn {
+  background: transparent;
+  border: none;
+  color: #cb4335;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.c-skill-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.c-skill-nav__up,
+.c-skill-nav__down {
+  border: solid 0.1rem #fff;
+  border-radius: 3.7rem;
+  font-size: 1.9rem;
+  padding: 1.1rem;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.c-skill-nav__up i,
+.c-skill-nav__down i {
+  color: #cb4335;
+}
+
+.c-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(0);

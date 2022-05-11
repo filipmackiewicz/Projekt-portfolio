@@ -1,0 +1,20 @@
+.c-skill-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.c-skill-nav__up,
+.c-skill-nav__down {
+    border: solid .1rem $color-white;
+    border-radius: 3.7rem;
+    font-size: 1.9rem;
+    padding: 1.1rem;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+.c-skill-nav__up i,
+.c-skill-nav__down i {
+    color: $color-red;
+}
