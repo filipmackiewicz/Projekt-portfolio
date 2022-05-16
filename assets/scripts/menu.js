@@ -17,19 +17,26 @@ class Menu {
         this.bars = document.querySelector(this.Selectors.bars);
         this.links = document.querySelector(this.Selectors.links);
         this.menu = document.querySelector(this.Selectors.menu);
-        this.link = document.querySelector(this.Selectors.link);
+        this.link = document.querySelectorAll(this.Selectors.link);
         this.addEventListeners();
     }
 
     showMenu() {
         this.links.classList.toggle(this.State.visible);
         this.bars.classList.toggle(this.State.animate);
+        
+    }
+
+    closeMenu() {
+        this.links.classList.remove(this.State.visible);
         console.log("zamykam");
     }
 
     addEventListeners() {
         this.menu.addEventListener('click', () => this.showMenu());
-        this.link.addEventListener('click', () => this.showMenu());
+        this.link.forEach(element => {
+            element.addEventListener('click', () => this.closeMenu());
+        });
     }
 
 }

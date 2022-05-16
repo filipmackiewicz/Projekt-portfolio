@@ -22,10 +22,11 @@
     font-size: 1.6rem;
     font-family: $font-family-light;
     transition: all .5s ease-in;
-    display: none;
+    max-height: 0;
     padding-right: .5rem;
+    overflow: hidden;
 }
 
 .c-box__skill-description.is-open {
-    display: block;
+    transition: all .5s ease-in-out;
 }
