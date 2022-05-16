@@ -646,8 +646,8 @@ html {
 }
 
 .c-box__skill-description.is-open {
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
 .c-skill-btns {

@@ -34,8 +34,6 @@ class Skills {
             const description = el.querySelector(self.Selectors.description);
             button.addEventListener("click", function () {
                 description.classList.toggle(self.state.open);
-                console.log(description.scrollHeight);
-                description.style.maxHeight = description.scrollHeight.toString() + "px";
                 button2.classList.toggle(self.state.open);
                 description.classList.contains("is-open") ? (button.innerHTML = "Zwiń opis") : (button.innerHTML = "Rozwiń opis");
                 description.classList.contains("is-open") ? (description.style.maxHeight = description.scrollHeight.toString() + "px") : (description.style = "");
@@ -46,6 +44,7 @@ class Skills {
                 description.classList.toggle(self.state.open);
                 button2.classList.toggle(self.state.open);
                 description.classList.contains("is-open") ? (button.innerHTML = "Zwiń opis") : (button.innerHTML = "Rozwiń opis");
+                description.classList.contains("is-open") ? (description.style.maxHeight = description.scrollHeight.toString() + "px") : (description.style = "");
             
             }, false)
         });
