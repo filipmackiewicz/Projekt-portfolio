@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Filip Mackiewicz</title>
+</head>
+
+<body class="l-body">
+    <div class="l-page-container">
+        <header class="l-header" id="header">
+            <nav class="c-menu">
+                <div class="c-header">
+                    <div class="c-header__logo">
+                    </div>
+                    <div class="c-header__hamburger">
+                        <button class="c-hamburger" data-menu>
+                            <span class="c-hamburger__bars" data-bars></span>
+                            <span class="c-hamburger__text">Menu</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="c-menu-links" data-links>
+                    <ul class="c-menu-list">
+                        <li class="c-menu-list__item">
+                            <a href="#about-me" class="c-menu-list__link" data-link>
+                                <span class="c-menu-list__title">
+                                    <span class="c-menu-list__word" data-hover="O mnie">
+                                        O mnie
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="c-menu-list__item">
+                            <a href="#skills" class="c-menu-list__link" data-link>
+                                <span class="c-menu-list__title">
+                                    <span class="c-menu-list__word" data-hover="Umiejętności">
+                                        Umiejętności
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="c-menu-list__item">
+                            <a href="/experience" class="c-menu-list__link" data-link>
+                                <span class="c-menu-list__title">
+                                    <span class="c-menu-list__word" data-hover="Doświadczenie">
+                                        Doświadczenie
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="c-menu-list__item">
+                            <a href="#" class="c-menu-list__link">
+                                <span class="c-menu-list__title">
+                                    <span class="c-menu-list__word" data-hover="Portfolio">
+                                        Portfolio
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="c-menu-list__item">
+                            <a href="#" class="c-menu-list__link">
+                                <span class="c-menu-list__title">
+                                    <span class="c-menu-list__word" data-hover="Kontakt">
+                                        Kontakt
+                                    </span>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+    </div>
+
+    <script src="/assets/scripts/menu.js"></script>
+    <script src="/assets/scripts/skills.js"></script>
+    <script src="/assets/scripts/gototop.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const menu = new Menu();
+        menu.initialize();
+        const skills = new Skills();
+        skills.initialize();
+        const up = new Gototop();
+        up.initialize();
+        AOS.init();
+    </script>
+</body>
+
+</html>
