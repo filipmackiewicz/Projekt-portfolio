@@ -1,0 +1,27 @@
+.c-skill-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-box-skill-btns__btn {
+    background: transparent;
+    border: none;
+    color: $color-red;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.c-box-skill-btns__arrow-button {
+    background: url('/assets/img/rozwijak.png');
+    height: 3.2rem;
+    width: 3.2rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all .3s ease-in;
+    margin-right: .5rem;
+}
+
+.c-box-skill-btns__arrow-button.is-open {
+    transform: rotate(180deg);
+}

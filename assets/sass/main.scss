@@ -10,6 +10,9 @@
 @import './layouts/about-me';
 @import './layouts/body';
 @import './layouts/header';
+@import './layouts/skills';
+@import './layouts/skill';
+
 
 //components
 @import './components/header';
@@ -19,7 +22,13 @@
 @import './components/about-me';
 @import './components/info';
 @import './components/navigation';
+@import './components/navigation-up';
 @import './components/menu';
+@import './components/offer';
+@import './components/box-skill';
+@import './components/skill-btns';
+@import './components/skill-nav';
+@import './components/skill';
 
 //animations
 @import './base/animations';

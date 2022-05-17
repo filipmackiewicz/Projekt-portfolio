@@ -1,0 +1,12 @@
+.l-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100vh;
+    position: relative;
+
+@include media (tablet-large) {
+        flex-direction: row;
+    }
+}

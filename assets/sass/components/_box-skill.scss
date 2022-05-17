@@ -1,0 +1,40 @@
+.c-box-skill {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    border-bottom: solid .1rem $color-gray;
+}
+
+.c-box-skill__text {
+    font-family: $font-family-regular;
+    font-size: 2.6rem;
+
+    color: $color-gray;
+}
+
+.c-box-skill-text__tag {
+    padding-left: 1rem;
+
+    font-family: $font-family-bold;
+    font-size: 3.6rem;
+
+    color: $color-gray-lighter;
+}
+
+.c-box-skill__description {
+    overflow: hidden;
+
+    max-height: 0;
+    padding-right: .5rem;
+
+    font-family: $font-family-light;
+    font-size: 1.6rem;
+
+    transition: all .5s ease-in;
+
+    color: $color-gray;
+}
+
+.c-box-skill__description.is-open {
+    transition: all .5s ease-in;
+}
