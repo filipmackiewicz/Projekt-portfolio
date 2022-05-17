@@ -1,9 +1,7 @@
 .l-bg {
-// padding: 5rem;
+    background: url('/assets/img/my-photo.png') no-repeat 37% -30%;
 
-    background: url('/assets/img/my-photo.png') no-repeat 37% 2%;
-
-    @include media (tablet-large) {
-        background: url('/assets/img/my-photo.png') no-repeat 30% 50%/contain;
+@include media (tablet-large) {
+        background: url('/assets/img/my-photo.png') no-repeat 10% 60%/contain;
     }
 }

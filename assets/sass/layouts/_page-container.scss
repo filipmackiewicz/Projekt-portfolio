@@ -1,9 +1,11 @@
 .l-page-container {
-    @include media (tablet) {
-        padding-top: 5rem;
-        padding-right: 18.125rem;
-        padding-left: 18.125rem;
-    }
+    padding: 5rem 5rem 0rem 5rem;
 
-padding: 0;
+    background: none;
+
+@include media (tablet-large) {
+        padding: 5rem 18.125rem 0rem 18.125rem;
+
+        background: none;
+    }
 }

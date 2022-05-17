@@ -8,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Filip Mackiewicz</title>
 </head>
 
 <body class="l-body">
     <div class="l-page-container">
-        <header class="l-header" class="aboutme">
+        <header class="l-header" id="header">
             <nav class="c-menu">
                 <div class="c-header">
                     <div class="c-header__logo">
@@ -78,8 +79,8 @@
             </nav>
         </header>
         <div class="l-bg">
-            <section class="l-about-me">
-                <div class="c-info">
+            <section class="l-about-me" id="about-me">
+                <div class="c-info" data-aos="fade-right">
                     <h1 class="c-info__header">Filip <br /> Mackiewicz</h1>
                     <ul class="c-info__list">
                         <li class="c-info-list__item icon-github-circular"></li>
@@ -88,7 +89,7 @@
                         <li class="c-info-list__item icon-facebook-circular"></li>
                     </ul>
                 </div>
-                <div class="c-about-me">
+                <div class="c-about-me" data-aos="fade-left">
                     <p class="c-about-me__title">Poznaj mnie bliżej</p>
                     <p class="c-about-me__subtitle">Junior front-end developer
                     </p>
@@ -108,7 +109,7 @@
             </div>
         </div>
         <section class="l-skills" id="skills">
-            <div class="c-offer">
+            <div class="c-offer" data-aos="fade-right">
                 <p class="c-offer__subtitle">Moje umiejętności</p>
                 <h2 class="c-offer__title">Co oferuję?</h2>
                 <p class="c-offer__description">Obecnie pracuje jako PrestaShop developer, a swoją przygodę z
@@ -120,7 +121,7 @@
                     czasie, realizuje własne projekty oraz ucze się nowych rozwiązań, które pozwalają usprawnić oraz
                     urozmaicić moją pracę.</p>
             </div>
-            <div class="l-skill">
+            <div class="l-skill" data-aos="fade-left">
                 <div class="c-skill" data-scroll>
                     <div class="c-box-skill" data-skill>
                         <p class="c-box-skill__text">01. <span> HTML</span></p>
@@ -213,19 +214,30 @@
                     </button>
                 </div>
             </div>
+            <button class="c-navigation-up" data-gototop>
+                <p class="c-navigation-up__link">
+                    <i class="c-navigation-up-link__icon icon-arrow-top-skill"></i>
+                </p>
+            </button>
         </section>
+
     </div>
 
     <script src="/assets/scripts/menu.js"></script>
     <script src="/assets/scripts/skills.js"></script>
+    <script src="/assets/scripts/gototop.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script src="/assets/scripts/smooth-scroll.js"></script> -->
     <script>
         const menu = new Menu();
         menu.initialize();
         const skills = new Skills();
         skills.initialize();
+        const up = new Gototop();
+        up.initialize();
         // const scroll = new Smoothscroll();
         // scroll.initialize();
+        AOS.init();
     </script>
 </body>
 

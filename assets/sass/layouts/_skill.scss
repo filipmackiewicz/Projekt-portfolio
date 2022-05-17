@@ -1,3 +1,9 @@
 .l-skill {
-    flex-basis: 40%;
+    margin-top: 5rem;
+
+@include media (tablet-large) {
+        flex-basis: 40%;
+    }
+
+    flex-basis: 100%;
 }

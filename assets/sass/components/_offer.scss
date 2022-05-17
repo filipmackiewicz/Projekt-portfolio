@@ -1,11 +1,19 @@
 .c-offer {
-    flex-basis: 50%;
-    padding-right: 15rem;
+    padding: 0;
+
+@include media (tablet-large) {
+        padding-right: 15rem;
+
+        flex-basis: 50%;
+    }
+
+    flex-basis: 100%;
 }
 
 .c-offer__subtitle {
     position: relative;
 
+    margin-top: 5rem;
     padding-left: 2rem;
 
     font-family: $font-family-semibold;
@@ -15,6 +23,9 @@
     text-transform: uppercase;
 
     color: $color-gray;
+@include media (tablet-large) {
+        margin-top: 0;
+    }
 }
 
 .c-offer__subtitle::before {
