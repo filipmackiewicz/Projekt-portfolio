@@ -1,0 +1,15 @@
+.l-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    border-top: solid .1rem $color-gray;
+@include media (smartphone) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

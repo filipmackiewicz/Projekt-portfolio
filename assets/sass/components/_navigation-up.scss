@@ -1,12 +1,19 @@
 .c-navigation-up {
     position: absolute;
-    bottom: 2%;
-    left: 50%;
+    bottom: 7%;
+    left: 48%;
 
     height: 4rem;
-    background: none;
-    border: none;
+
     cursor: pointer;
+
+    border: none;
+    background: none;
+    display: none;
+@include media (tablet-large) {
+        left: 49%;
+        display: block
+    }
 }
 
 .c-navigation-up__link {
@@ -23,9 +30,9 @@
 }
 
 .c-navigation-up-link__icon {
+    margin-left: .1rem;
+
     animation: bounce 2s infinite;
 
     color: $color-white;
-
-    margin-left: 0.1rem;
 }

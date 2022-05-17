@@ -1,7 +1,5 @@
 .l-bg {
-    background: url('/assets/img/my-photo.png') no-repeat 37% -30%;
-
-@include media (tablet-large) {
+    @include media (tablet-large) {
         background: url('/assets/img/my-photo.png') no-repeat 10% 60%/contain;
     }
 }

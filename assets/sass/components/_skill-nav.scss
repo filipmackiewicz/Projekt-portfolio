@@ -1,17 +1,32 @@
 .c-skill-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 2.5rem;
+
+
+    
+
+    display: none;
+
+    @include media (tablet-large) {
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5rem;
+    }
+}
+
+.c-skill-nav__up {
+    margin-right: 1.5rem;
 }
 
 .c-skill-nav__up,
 .c-skill-nav__down {
+    padding: 1rem;
+
+    font-size: 1.9rem;
+
+    cursor: pointer;
+
     border: solid .1rem $color-gray;
     border-radius: 3rem;
-    font-size: 1.9rem;
-    padding: 1rem;
-    cursor: pointer;
-    margin-right: 1.5rem;
     background: transparent;
 }
 

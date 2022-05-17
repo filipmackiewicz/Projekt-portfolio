@@ -1,0 +1,26 @@
+.c-footer-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+
+@include media (smartphone) {
+        display: block;
+        margin-bottom: 0;
+    }
+}
+
+.c-footer-socials__item {
+    width: 3.5rem;
+    height: 3.5rem;
+
+    font-size: 3.5rem;
+
+    color: $color-white;
+    border-radius: 50%;
+}
+
+.c-footer-socials__item:hover {
+    background: $color-blue;
+}
