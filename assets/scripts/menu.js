@@ -29,7 +29,6 @@ class Menu {
 
     closeMenu() {
         this.links.classList.remove(this.State.visible);
-        console.log("zamykam");
     }
 
     addEventListeners() {
