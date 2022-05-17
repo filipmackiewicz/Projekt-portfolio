@@ -11,22 +11,18 @@ html {
   font-size: 10px;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: .5rem;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #546bab;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #2c55c8;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -274,7 +270,7 @@ html {
   height: .2rem;
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
-  background: white;
+  background: #fff;
 }
 
 .c-hamburger__bars::after, .c-hamburger__bars::before {
@@ -684,36 +680,36 @@ html {
 }
 
 .c-box-skill {
-  border-bottom: solid 1px #b4b3b1;
-  padding-bottom: 2rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: solid 0.1rem #b4b3b1;
 }
 
 .c-box-skill__text {
-  color: #b4b3b1;
-  font-size: 2.6rem;
   font-family: "oliviar-regular";
-}
-
-.c-box-skill__text > span {
-  color: #e6e5df;
-  font-size: 3.6rem;
-  font-family: "oliviar-bold";
-  padding-left: 1rem;
-}
-
-.c-box__skill-description {
+  font-size: 2.6rem;
   color: #b4b3b1;
-  font-size: 1.6rem;
-  font-family: "oliviar-light";
-  -webkit-transition: all .5s ease-in;
-  transition: all .5s ease-in;
+}
+
+.c-box-skill-text__tag {
+  padding-left: 1rem;
+  font-family: "oliviar-bold";
+  font-size: 3.6rem;
+  color: #e6e5df;
+}
+
+.c-box-skill__description {
+  overflow: hidden;
   max-height: 0;
   padding-right: .5rem;
-  overflow: hidden;
+  font-family: "oliviar-light";
+  font-size: 1.6rem;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  color: #b4b3b1;
 }
 
-.c-box__skill-description.is-open {
+.c-box-skill__description.is-open {
   -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
 }
@@ -735,7 +731,7 @@ html {
   text-transform: uppercase;
 }
 
-.c-box-skill-btns__btn2 {
+.c-box-skill-btns__arrow-button {
   background: url("/assets/img/rozwijak.png");
   height: 3.2rem;
   width: 3.2rem;
@@ -747,7 +743,7 @@ html {
   margin-right: .5rem;
 }
 
-.c-box-skill-btns__btn2.is-open {
+.c-box-skill-btns__arrow-button.is-open {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -786,7 +782,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 400px;
+  height: 40rem;
   overflow-y: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;

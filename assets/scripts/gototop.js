@@ -10,11 +10,11 @@ class Gototop {
         this.addEventListeners();
     }
 
-    goToTop () {
-        window.scrollTo(0,0);
-    }
-
     addEventListeners () {
         this.up.addEventListener('click', () => this.goToTop());
+    }
+
+    goToTop () {
+        window.scrollTo(0,0);
     }
 }

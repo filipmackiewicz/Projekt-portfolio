@@ -1,32 +1,40 @@
 .c-box-skill {
-    border-bottom: solid 1px $color-gray;
-    padding-bottom: 2rem;
     padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    border-bottom: solid .1rem $color-gray;
 }
 
 .c-box-skill__text {
-    color: $color-gray;
-    font-size: 2.6rem;
     font-family: $font-family-regular;
-}
+    font-size: 2.6rem;
 
-.c-box-skill__text > span {
-    color: $color-gray-lighter;
-    font-size: 3.6rem;
-    font-family: $font-family-bold;
-    padding-left: 1rem;
-}
-
-.c-box__skill-description {
     color: $color-gray;
-    font-size: 1.6rem;
-    font-family: $font-family-light;
-    transition: all .5s ease-in;
+}
+
+.c-box-skill-text__tag {
+    padding-left: 1rem;
+
+    font-family: $font-family-bold;
+    font-size: 3.6rem;
+
+    color: $color-gray-lighter;
+}
+
+.c-box-skill__description {
+    overflow: hidden;
+
     max-height: 0;
     padding-right: .5rem;
-    overflow: hidden;
+
+    font-family: $font-family-light;
+    font-size: 1.6rem;
+
+    transition: all .5s ease-in;
+
+    color: $color-gray;
 }
 
-.c-box__skill-description.is-open {
+.c-box-skill__description.is-open {
     transition: all .5s ease-in;
 }

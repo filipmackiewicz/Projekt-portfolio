@@ -32,7 +32,7 @@
 
     transition: all .1s ease-in;
 
-    background: rgba(255, 255, 255, 1);
+    background: $color-white;
 
     &::after,
     &::before {

@@ -2,7 +2,7 @@ class Skills {
     constructor () {
         this.Selectors = {
             btn: '[data-btn]',
-            btn2: '[data-btn2]',
+            arrowButton: '[data-arrowbutton]',
             description: '[data-description]',
             container: '[data-container]',
             navUp: '[data-navup]',
@@ -30,19 +30,19 @@ class Skills {
         const self = this;
         content.forEach(function(el){
             const button = el.querySelector(self.Selectors.btn);
-            const button2 = el.querySelector(self.Selectors.btn2);
+            const arrowBtn = el.querySelector(self.Selectors.arrowButton);
             const description = el.querySelector(self.Selectors.description);
             button.addEventListener("click", function () {
                 description.classList.toggle(self.state.open);
-                button2.classList.toggle(self.state.open);
+                arrowBtn.classList.toggle(self.state.open);
                 description.classList.contains("is-open") ? (button.innerHTML = "Zwiń opis") : (button.innerHTML = "Rozwiń opis");
                 description.classList.contains("is-open") ? (description.style.maxHeight = description.scrollHeight.toString() + "px") : (description.style = "");
             
             }, false)
 
-            button2.addEventListener("click", function () {
+            arrowBtn.addEventListener("click", function () {
                 description.classList.toggle(self.state.open);
-                button2.classList.toggle(self.state.open);
+                arrowBtn.classList.toggle(self.state.open);
                 description.classList.contains("is-open") ? (button.innerHTML = "Zwiń opis") : (button.innerHTML = "Rozwiń opis");
                 description.classList.contains("is-open") ? (description.style.maxHeight = description.scrollHeight.toString() + "px") : (description.style = "");
             

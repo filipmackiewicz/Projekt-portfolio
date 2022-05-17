@@ -11,7 +11,7 @@
     text-transform: uppercase;
 }
 
-.c-box-skill-btns__btn2 {
+.c-box-skill-btns__arrow-button {
     background: url('/assets/img/rozwijak.png');
     height: 3.2rem;
     width: 3.2rem;
@@ -22,6 +22,6 @@
     margin-right: .5rem;
 }
 
-.c-box-skill-btns__btn2.is-open {
+.c-box-skill-btns__arrow-button.is-open {
     transform: rotate(180deg);
 }
