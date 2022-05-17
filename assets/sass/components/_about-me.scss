@@ -64,6 +64,8 @@ flex-basis: 100%;
     color: $color-gray;
 }
 .c-about-me__link {
+    @include transition(padding color background-position, .3s, ease-in, 0s);
+
     position: absolute;
     bottom: 0;
 
@@ -72,7 +74,6 @@ flex-basis: 100%;
     font-family: $font-family-regular;
     font-size: 1.6rem;
 
-    transition: all .3s;
     text-decoration: none;
 
     color: $color-red;
@@ -80,16 +81,16 @@ flex-basis: 100%;
     background-image: linear-gradient(to top, $color-red 50%, $color-blue-dark 50%);
     background-size: 100% 200%;
 
-@include media (tablet-large) {
+    @include media (tablet-large) {
         bottom: 30%;
     }
 }
 .c-about-me-link__icon {
+    @include transition(margin-left, .3s, ease-in, 0s);
+
     margin-left: .7rem;
 
     font-size: 1.2rem;
-
-    transition: all .3s;
 }
 .c-about-me__link:hover {
     padding: .3rem;

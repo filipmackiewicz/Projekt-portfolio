@@ -1,0 +1,32 @@
+.c-footer-go-to-up {
+    background: transparent;
+    background-image: linear-gradient(to top, $color-red 50%, $color-blue-dark 50%);
+    background-size: 100% 200%;
+    @include transition(color background-position, .3s .3s, ease-in, 0s);
+    border: none;
+    cursor: pointer;
+    border-bottom: solid .1rem $color-red;
+    padding: .5rem;
+}
+.c-footer-go-to-up__text {
+    color: $color-red;
+    font-family: $font-family-regular;
+    font-size: 1.4rem;
+}
+
+.c-footer-go-to-up-text__icon {
+    color: $color-red;
+    font-size: 1.3rem;
+    margin-left: .5rem;
+}
+
+
+.c-footer-go-to-up:hover .c-footer-go-to-up__text,
+.c-footer-go-to-up:hover .c-footer-go-to-up-text__icon {
+    color: $color-white;
+}
+
+.c-footer-go-to-up:hover {
+    // background: $color-red;
+    background-position: 0 100%;
+}

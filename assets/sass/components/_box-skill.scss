@@ -30,11 +30,11 @@
     font-family: $font-family-light;
     font-size: 1.6rem;
 
-    transition: all .5s ease-in;
+    @include transition(all, .5s, ease-in, 0s);
 
     color: $color-gray;
 }
 
 .c-box-skill__description.is-open {
-    transition: all .5s ease-in;
+    @include transition(all, .5s, ease-in, 0s);
 }

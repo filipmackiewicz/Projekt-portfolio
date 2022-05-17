@@ -6,7 +6,7 @@
 
     height: 100vh;
 
-    transition: all .2s ease-in;
+    @include transition(left, .2s, ease-in, 0s);
 
     background: $color-blue;
 }

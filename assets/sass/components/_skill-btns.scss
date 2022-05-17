@@ -4,22 +4,25 @@
 }
 
 .c-box-skill-btns__btn {
-    background: transparent;
-    border: none;
-    color: $color-red;
     cursor: pointer;
     text-transform: uppercase;
+
+    color: $color-red;
+    border: none;
+    background: transparent;
 }
 
 .c-box-skill-btns__arrow-button {
-    background: url('/assets/img/rozwijak.png');
-    height: 3.2rem;
     width: 3.2rem;
-    border: none;
-    cursor: pointer;
+    height: 3.2rem;
     margin-top: 1rem;
-    transition: all .3s ease-in;
     margin-right: .5rem;
+
+    cursor: pointer;
+    @include transition(transform, .5s, ease-in, 0s);
+
+    border: none;
+    background: url('/assets/img/oblique-arrow.png');
 }
 
 .c-box-skill-btns__arrow-button.is-open {

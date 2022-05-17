@@ -12,7 +12,7 @@
 @import './layouts/header';
 @import './layouts/skills';
 @import './layouts/skill';
-
+@import './layouts/footer';
 
 //components
 @import './components/header';
@@ -29,6 +29,9 @@
 @import './components/skill-btns';
 @import './components/skill-nav';
 @import './components/skill';
+@import './components/footer-watermark';
+@import './components/footer-socials';
+@import './components/footer-go-to-up';
 
 //animations
 @import './base/animations';

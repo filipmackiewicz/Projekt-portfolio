@@ -1,0 +1,16 @@
+.c-footer-watermark__text {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 2rem;
+
+    font-family: $font-family-light;
+    font-size: 1.6rem;
+
+    color: $color-gray;
+
+@include media (smartphone) {
+        display: block;
+        margin-bottom: 0;
+    }
+}

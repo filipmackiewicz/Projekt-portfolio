@@ -23,7 +23,7 @@
         margin-left: -1.1rem;
 
         content: '';
-        transition: transform .3s ease-in;
+        @include transition(transform, .3s, ease-in, 0s);
 
         border-radius: 3.5rem;
         border-bottom-left-radius: 0;

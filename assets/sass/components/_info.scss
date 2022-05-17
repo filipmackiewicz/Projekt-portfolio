@@ -1,11 +1,11 @@
 .c-info {
-display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
 
     min-height: 100vh;
 
-    @include media (tablet-large) {
+@include media (tablet-large) {
         min-height: 88.8vh;
 
         background: none;
@@ -13,10 +13,10 @@ display: flex;
         flex-basis: 60%;
     }
 
-    flex-basis: 100%;
+flex-basis: 100%;
 }
 .c-info__header {
-position: relative;
+    position: relative;
 
     padding-bottom: 1rem;
 
@@ -25,7 +25,7 @@ position: relative;
 
     color: $color-gray-lighter;
 
-    @include media (smartphone) {
+@include media (smartphone) {
         font-size: 7rem;
     }
 
