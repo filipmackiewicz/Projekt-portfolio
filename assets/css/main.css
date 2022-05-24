@@ -540,10 +540,16 @@ select:-webkit-autofill:focus {
 }
 
 .c-about-me__description {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   font-family: "oliviar-light";
   font-size: 1.6rem;
   color: #b4b3b1;
+}
+
+@media (min-width: 1024px) {
+  .c-about-me__description {
+    margin-bottom: 13rem;
+  }
 }
 
 .c-about-me__link {
@@ -643,6 +649,7 @@ select:-webkit-autofill:focus {
   width: 3.5rem;
   height: 3.5rem;
   font-size: 3.5rem;
+  text-decoration: none;
   color: #fff;
   border-radius: 50%;
 }
@@ -960,6 +967,7 @@ select:-webkit-autofill:focus {
   width: 3.5rem;
   height: 3.5rem;
   font-size: 3.5rem;
+  text-decoration: none;
   color: #fff;
   border-radius: 50%;
 }
