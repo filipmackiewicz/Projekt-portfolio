@@ -1,20 +1,26 @@
 .c-tab {
-    text-align: center;
     margin-top: 4rem;
+
+    text-align: center;
 }
 
 .c-tab__button {
-    font-size: 1.4rem;
-    background: none;
-    border: none;
-    font-family: $font-family-regular;
-    color: $color-red;
+    @include transition(color, .2s, ease-in, 0s);
+
     padding: 0rem .5rem;
 
-    @include transition(color, .2s, ease-in, 0s);
+    font-family: $font-family-regular;
+    font-size: 1.4rem;
+
+    cursor: pointer;
+
+    color: $color-red;
+    border: none;
+    background: none;
     @include media (smartphone) {
-        font-size: 2rem;
         padding: 0rem 2rem;
+
+        font-size: 2rem;
     }
 }
 
@@ -24,8 +30,4 @@
 
 .c-tab__button.is-active {
     color: $color-white;
-}
-
-.c-tab__button.is-active:hover {
-    color: $color-red;
 }

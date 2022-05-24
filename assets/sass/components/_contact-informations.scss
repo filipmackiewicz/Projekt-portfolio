@@ -1,16 +1,16 @@
-.c-offer {
-    padding: 0;
+.c-contact-informations {
+    min-height: 45rem;
+    padding-right: 5rem;
 
-    @include media (tablet-large) {
-        padding-right: 15rem;
-
-        flex-basis: 50%;
+    background: url('/assets/img/contact-bg.jpg') no-repeat 67% 80%/50%;
+    @include media (tablet) {
+        flex-basis: 47%;
     }
 
     flex-basis: 100%;
 }
 
-.c-offer__subtitle {
+.c-contact-informations__subtitle {
     position: relative;
 
     margin-top: 5rem;
@@ -23,10 +23,6 @@
     text-transform: uppercase;
 
     color: $color-gray;
-
-    @include media (tablet-large) {
-        margin-top: 0;
-    }
 
     &::before {
         position: absolute;
@@ -42,19 +38,16 @@
     }
 }
 
-.c-offer__title {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+.c-contact-informations__title {
+    padding: 3rem 0rem;
 
     font-family: $font-family-bold;
     font-size: 7.2rem;
 
-    cursor: default;
-
     color: $color-gray-lighter;
 }
 
-.c-offer__description {
+.c-contact-information__text {
     position: relative;
 
     padding-left: 7rem;

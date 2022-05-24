@@ -15,6 +15,7 @@
 @import './layouts/skill';
 @import './layouts/footer';
 @import './layouts/experience';
+@import './layouts/contact';
 
 //components
 @import './components/header';
@@ -39,6 +40,9 @@
 @import './components/experience-list';
 @import './components/tab';
 @import './components/projects';
+@import './components/contact-informations';
+@import './components/contact';
+@import './components/preloader';
 
 //animations
 @import './base/animations';

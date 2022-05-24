@@ -13,13 +13,14 @@
 }
 
 .c-box-skill-btns__arrow-button {
+    @include transition(transform, .5s, ease-in, 0s);
+
     width: 3.2rem;
     height: 3.2rem;
     margin-top: 1rem;
     margin-right: .5rem;
 
     cursor: pointer;
-    @include transition(transform, .5s, ease-in, 0s);
 
     border: none;
     background: url('/assets/img/oblique-arrow.png');

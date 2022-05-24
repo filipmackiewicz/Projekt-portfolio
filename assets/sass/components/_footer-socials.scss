@@ -5,8 +5,9 @@
 
     margin-bottom: 2rem;
 
-@include media (smartphone) {
+    @include media (smartphone) {
         display: block;
+
         margin-bottom: 0;
     }
 }

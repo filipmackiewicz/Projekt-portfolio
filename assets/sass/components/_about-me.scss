@@ -8,14 +8,14 @@
 
     padding-top: 3rem;
 
-@include media (tablet-large) {
+    @include media (tablet-large) {
         margin-top: 0;
         padding-top: 0;
 
         flex-basis: 40%;
     }
 
-flex-basis: 100%;
+    flex-basis: 100%;
 }
 
 .c-about-me__title {
@@ -102,4 +102,3 @@ flex-basis: 100%;
 .c-about-me__link:hover .c-about-me-link__icon {
     margin-left: .3rem;
 }
-

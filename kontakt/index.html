@@ -81,41 +81,40 @@
                 </div>
             </nav>
         </header>
-        <section class="l-experience">
-            <div class="c-title">
-                <p class="c-title__subtitle">Krok po kroku</p>
-                <h1 class="c-title__title">Edukacja i doświadczenie</h1>
+        <section class="l-contact">
+            <div class="c-contact-informations">
+                <p class="c-contact-informations__subtitle">Bądźmy w kontakcie</p>
+                <h1 class="c-contact-informations__title">Napisz do mnie</h1>
+                <p class="c-contact-information__text">Zostaw wiadomość przez formularz, odpowiem mozliwie szybko
+                    bądź
+                    skontaktuje się z Tobą</p>
             </div>
-            <ul class="c-experience-list">
-                <li class="c-experience-item c-experience-item--left">
-                    <p class="c-experience-item__title">Akademia Nauk Stosowanych <br /> w Łomży</p>
-                    <p class="c-experience-item__place-name">Kierunek: Informatyka</p>
-                    <p class="c-experience-item__date-level">Poziom wykształcenia: wyższe (magister)</p>
-                    <p class="c-experience-item__date-level">03.2022 - obecnie</p>
-                </li>
-                <li class="c-experience-item">
-                    <p class="c-experience-item__title">Lider zespołu developerskiego <br />PrestaShop developer</p>
-                    <p class="c-experience-item__place-name">WeNet group</p>
-                    <p class="c-experience-item__date-level">02.2021 - obecnie</p>
-                </li>
-                <li class="c-experience-item c-experience-item--left">
-                    <p class="c-experience-item__title">Uniwersytet w Białymstoku</p>
-                    <p class="c-experience-item__place-name">Kierunek: Informatyka</p>
-                    <p class="c-experience-item__date-level">Poziom wykształcenia: wyższe (licencjat)</p>
-                    <p class="c-experience-item__date-level">10.2017 - 07.2020</p>
-                </li>
-                <li class="c-experience-item">
-                    <p class="c-experience-item__title">PrestaShop developer</p>
-                    <p class="c-experience-item__place-name">WeNet group</p>
-                    <p class="c-experience-item__date-level">10.2020 - 02.2021</p>
-                </li>
-                <li class="c-experience-item c-experience-item--left">
-                    <p class="c-experience-item__title">III Liceum Ogólnokształcące <br /> w Białymstoku</p>
-                    <p class="c-experience-item__date-level">Poziom wykształcenia: średnie</p>
-                    <p class="c-experience-item__date-level">09.2014 - 04.2017</p>
-                </li>
-            </ul>
-
+            <div class="c-contact">
+                <h2 class="c-contact__title">Może porozmawiamy?</h2>
+                <form class="c-contact__form" action="https://formspree.io/f/xknyyoon" method="POST">
+                    <input class="c-contact-form__input" type="email" name="email" placeholder="Imię / pseudonim"
+                        required>
+                    <textarea class="c-contact-form__textarea" name="message" placeholder="Treść wiadomości"
+                        required></textarea>
+                    <label class="c-contact-form__label">
+                        <input class="c-contact-form-label__input" type="checkbox" id="agreement" required>Wyrażam
+                        zgodę
+                        na przetwarzanie
+                        danych
+                        osobowych zgodnie z ustawą o ochronie danych osobowych w związku z (np. wysłaniem zapytania
+                        przez formularz kontaktowy). Podanie danych jest dobrowolne, ale niezbędne do przetworzenia
+                        zapytania. Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych,
+                        możliwości
+                        ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych
+                        jest
+                        <strong>Filip Mackiewicz</strong>.
+                    </label>
+                    <div class="c-contact-form__button-box">
+                        <button class="c-contact-form-button-box__button" type="submit">Wyślij<i
+                                class="c-contact-form-button-box-button__icon icon-arrow-right"></i></button>
+                    </div>
+                </form>
+            </div>
         </section>
         <footer class="l-footer">
             <div class="c-footer-watermark">
@@ -141,13 +140,11 @@
     <script src="/assets/scripts/menu.js"></script>
     <script src="/assets/scripts/gototop.js"></script>
     <script src="/assets/scripts/loader.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         const menu = new Menu();
         menu.initialize();
         const up = new Gototop();
         up.initialize();
-        AOS.init();
         const loader = new Loader();
         loader.initialize();
     </script>

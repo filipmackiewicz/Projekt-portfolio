@@ -12,6 +12,8 @@
     background: url('/assets/img/fm-logo.png');
 
     &::before {
+        @include transition(transform, .3s, ease-in, 0s);
+
         position: absolute;
         z-index: -1;
 
@@ -23,7 +25,6 @@
         margin-left: -1.1rem;
 
         content: '';
-        @include transition(transform, .3s, ease-in, 0s);
 
         border-radius: 3.5rem;
         border-bottom-left-radius: 0;

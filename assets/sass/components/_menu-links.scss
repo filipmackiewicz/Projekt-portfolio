@@ -1,4 +1,6 @@
 .c-menu-links {
+    @include transition(left, .2s, ease-in, 0s);
+
     position: absolute;
     z-index: 1;
     top: 0;
@@ -6,13 +8,11 @@
 
     height: 100vh;
 
-    @include transition(left, .2s, ease-in, 0s);
-
     background: $color-blue;
 }
 
 .c-menu-links.is-visible {
-left: 0;
+    left: 0;
 
     @include media (smartphone-large) {
         left: calc(100% - 40rem);
