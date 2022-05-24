@@ -6,6 +6,7 @@
 
 //layouts
 @import './layouts/page-container';
+@import './layouts/page-container-no-bg';
 @import './layouts/bg';
 @import './layouts/about-me';
 @import './layouts/body';
@@ -13,6 +14,7 @@
 @import './layouts/skills';
 @import './layouts/skill';
 @import './layouts/footer';
+@import './layouts/experience';
 
 //components
 @import './components/header';
@@ -32,6 +34,11 @@
 @import './components/footer-watermark';
 @import './components/footer-socials';
 @import './components/footer-go-to-up';
+@import './components/title';
+@import './components/experience-item';
+@import './components/experience-list';
+@import './components/tab';
+@import './components/projects';
 
 //animations
 @import './base/animations';
