@@ -1,76 +1,99 @@
 .c-experience-item {
-    flex-basis: 47%;
-    list-style-type: none;
     position: relative;
+
+    list-style-type: none;
+    @include media (tablet) {
+        flex-basis: 47%;
+    }
+
+    flex-basis: 44%;
 }
 
 .c-experience-item:first-child::after {
     position: absolute;
-    right: -1.9rem;
     top: 0;
-    content: " ";
+    right: -1.9rem;
+
+    width: 25px;
+    height: 25px;
+
+    content: ' ';
+    transition: all .5s ease-in-out;
+
     border: .6rem solid $color-blue;
     border-radius: 500%;
     background: $color-white;
-    height: 25px;
-    width: 25px;
-    transition: all .5s ease-in-out;
 }
 
 .c-experience-item__title {
+    padding-bottom: 1rem;
+
+    font-family: $font-family-bold;
+    font-size: 1.3rem;
+
     color: $color-gray-lighter;
-    font-size: 3.2rem;
-    font-family: $font-family-bold;
-    padding-bottom: 1rem;
+    @include media (tablet) {
+        font-size: 3.2rem;
+    }
+
+    @include media (smartphone-large) {
+        font-size: 2rem;
+    }
 }
 
-.c-experience-item__company-name {
+.c-experience-item__place-name {
+    padding-bottom: 1rem;
+
+    font-family: $font-family-bold;
+    font-size: 1.5rem;
+
     color: $color-red;
-    font-size: 2.2rem;
-    font-family: $font-family-bold;
-    padding-bottom: 1rem;
+    @include media (tablet) {
+        font-size: 2.2rem;
+    }
 }
 
-.c-experience-item__date {
-    color: $color-gray;
-    font-size: 1.6rem;
-    font-family: $font-family-light;
+.c-experience-item__date-level {
     padding-bottom: 2rem;
-}
 
-.c-experience-item__study-field {
-    color: $color-red;
-    font-size: 2.2rem;
-    font-family: $font-family-bold;
-    padding-bottom: 1rem;
-}
-
-.c-experience-item__education-level {
-    color: $color-gray;
-    font-size: 1.6rem;
     font-family: $font-family-light;
+    font-size: 1.2rem;
+
+    color: $color-gray;
+    @include media (tablet) {
+        font-size: 1.6rem;
+    }
 }
 
 .c-experience-item--left {
+    padding-right: calc(50% - 44%);
+
     text-align: right;
+
     border-right: dashed .1rem $color-blue;
-    padding-right: calc(50% - 47%);
+    @include media (tablet) {
+        padding-right: calc(50% - 47%);
+    }
 
     &::after {
         position: absolute;
-        right: -1.8rem;
         top: .5rem;
-        content: " ";
+        right: -1.8rem;
+
+        width: 20px;
+        height: 20px;
+
+        content: ' ';
+        transition: all .5s ease-in-out;
+
         border: .6rem solid $color-blue;
         border-radius: 500%;
         background: $color-white;
-        height: 20px;
-        width: 20px;
-        transition: all .5s ease-in-out;
     }
 
     &:hover::after {
-        border-color: #171F2B;
         transition: all .5s ease-in-out;
+
+        border-color: #171f2b;
     }
 }

@@ -12,7 +12,7 @@
     <title>Filip Mackiewicz</title>
 </head>
 
-<body class="l-body">
+<body class="l-body l-expierence">
     <div class="l-page-container-no-bg">
         <header class="l-header" id="header">
             <nav class="c-menu">
@@ -57,7 +57,7 @@
                             </a>
                         </li>
                         <li class="c-menu-list__item">
-                            <a href="#" class="c-menu-list__link">
+                            <a href="/portfolio" class="c-menu-list__link">
                                 <span class="c-menu-list__title">
                                     <span class="c-menu-list__word" data-hover="Portfolio">
                                         Portfolio
@@ -86,34 +86,32 @@
             <ul class="c-experience-list">
                 <li class="c-experience-item c-experience-item--left">
                     <p class="c-experience-item__title">Akademia Nauk Stosowanych <br /> w Łomży</p>
-                    <p class="c-experience-item__study-field">Kierunek: Informatyka</p>
-                    <p class="c-experience-item__education-level">Poziom wykształcenia: wyższe (magister)</p>
-                    <p class="c-experience-item__date">03.2022 - obecnie</p>
+                    <p class="c-experience-item__place-name">Kierunek: Informatyka</p>
+                    <p class="c-experience-item__date-level">Poziom wykształcenia: wyższe (magister)</p>
+                    <p class="c-experience-item__date-level">03.2022 - obecnie</p>
                 </li>
                 <li class="c-experience-item">
                     <p class="c-experience-item__title">Lider zespołu developerskiego <br />PrestaShop developer</p>
-                    <p class="c-experience-item__company-name">WeNet group</p>
-                    <p class="c-experience-item__date">02.2021 - obecnie</p>
+                    <p class="c-experience-item__place-name">WeNet group</p>
+                    <p class="c-experience-item__date-level">02.2021 - obecnie</p>
                 </li>
                 <li class="c-experience-item c-experience-item--left">
                     <p class="c-experience-item__title">Uniwersytet w Białymstoku</p>
-                    <p class="c-experience-item__study-field">Kierunek: Informatyka</p>
-                    <p class="c-experience-item__education-level">Poziom wykształcenia: wyższe (licencjat)</p>
-                    <p class="c-experience-item__date">10.2017 - 07.2020</p>
+                    <p class="c-experience-item__place-name">Kierunek: Informatyka</p>
+                    <p class="c-experience-item__date-level">Poziom wykształcenia: wyższe (licencjat)</p>
+                    <p class="c-experience-item__date-level">10.2017 - 07.2020</p>
                 </li>
                 <li class="c-experience-item">
                     <p class="c-experience-item__title">PrestaShop developer</p>
-                    <p class="c-experience-item__company-name">WeNet group</p>
-                    <p class="c-experience-item__date">10.2020 - 02.2021</p>
+                    <p class="c-experience-item__place-name">WeNet group</p>
+                    <p class="c-experience-item__date-level">10.2020 - 02.2021</p>
                 </li>
                 <li class="c-experience-item c-experience-item--left">
                     <p class="c-experience-item__title">III Liceum Ogólnokształcące <br /> w Białymstoku</p>
-                    <p class="c-experience-item__education-level">Poziom wykształcenia: średnie</p>
-                    <p class="c-experience-item__date">09.2014 - 04.2017</p>
+                    <p class="c-experience-item__date-level">Poziom wykształcenia: średnie</p>
+                    <p class="c-experience-item__date-level">09.2014 - 04.2017</p>
                 </li>
-                <li class="c-experience-item">
-
-                </li>
+                <!-- <li class="c-experience-item"></li> -->
             </ul>
 
         </section>
@@ -139,14 +137,11 @@
 
 
     <script src="/assets/scripts/menu.js"></script>
-    <script src="/assets/scripts/skills.js"></script>
     <script src="/assets/scripts/gototop.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         const menu = new Menu();
         menu.initialize();
-        const skills = new Skills();
-        skills.initialize();
         const up = new Gototop();
         up.initialize();
         AOS.init();

@@ -11,7 +11,6 @@
     &::after {
         position: absolute;
         bottom: 0;
-        left:  48.5%;
     
         width: 5rem;
         height: .5rem;
@@ -46,7 +45,15 @@
 
 .c-title__title {
     color: $color-gray-lighter;
-    font-size: 7.2rem;
+    font-size: 3rem;
     font-family: $font-family-bold;
     margin-top: 3rem;
+
+    @include media (desktop-small) {
+        font-size: 7.2rem;
+    }
+
+    @include media (smartphone-large) {
+        font-size: 4.5rem;
+    }
 }
