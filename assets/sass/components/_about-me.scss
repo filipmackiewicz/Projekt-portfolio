@@ -56,7 +56,11 @@
 }
 
 .c-about-me__description {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+
+    @include media (tablet-large) {
+        margin-bottom: 13rem;
+    }
 
     font-family: $font-family-light;
     font-size: 1.6rem;
