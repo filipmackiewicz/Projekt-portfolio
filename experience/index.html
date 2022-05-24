@@ -13,6 +13,9 @@
 </head>
 
 <body class="l-body l-expierence">
+    <div class="c-preloader" data-loader>
+        <p class="c-preloader__text" data-loadertext>0</p>
+    </div>
     <div class="l-page-container-no-bg">
         <header class="l-header" id="header">
             <nav class="c-menu">
@@ -66,7 +69,7 @@
                             </a>
                         </li>
                         <li class="c-menu-list__item">
-                            <a href="#" class="c-menu-list__link">
+                            <a href="/kontakt" class="c-menu-list__link">
                                 <span class="c-menu-list__title">
                                     <span class="c-menu-list__word" data-hover="Kontakt">
                                         Kontakt
@@ -111,7 +114,6 @@
                     <p class="c-experience-item__date-level">Poziom wykształcenia: średnie</p>
                     <p class="c-experience-item__date-level">09.2014 - 04.2017</p>
                 </li>
-                <!-- <li class="c-experience-item"></li> -->
             </ul>
 
         </section>
@@ -138,6 +140,7 @@
 
     <script src="/assets/scripts/menu.js"></script>
     <script src="/assets/scripts/gototop.js"></script>
+    <script src="/assets/scripts/loader.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         const menu = new Menu();
@@ -145,6 +148,8 @@
         const up = new Gototop();
         up.initialize();
         AOS.init();
+        const loader = new Loader();
+        loader.initialize();
     </script>
 </body>
 

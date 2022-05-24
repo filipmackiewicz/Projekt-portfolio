@@ -3,16 +3,18 @@
     bottom: 7%;
     left: 48%;
 
+    display: none;
+
     height: 4rem;
 
     cursor: pointer;
 
     border: none;
     background: none;
-    display: none;
-@include media (tablet-large) {
+    @include media (tablet-large) {
         left: 49%;
-        display: block
+
+        display: block;
     }
 }
 

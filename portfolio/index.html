@@ -13,6 +13,9 @@
 </head>
 
 <body class="l-body l-expierence">
+    <div class="c-preloader" data-loader>
+        <p class="c-preloader__text" data-loadertext>0</p>
+    </div>
     <div class="l-page-container-no-bg">
         <header class="l-header" id="header">
             <nav class="c-menu">
@@ -66,7 +69,7 @@
                             </a>
                         </li>
                         <li class="c-menu-list__item">
-                            <a href="#" class="c-menu-list__link">
+                            <a href="/kontakt" class="c-menu-list__link">
                                 <span class="c-menu-list__title">
                                     <span class="c-menu-list__word" data-hover="Kontakt">
                                         Kontakt
@@ -78,12 +81,12 @@
                 </div>
             </nav>
         </header>
-        <section class="l-experience">
+        <section class="l-projects">
             <div class="c-title">
                 <h1 class="c-title__title">Portfolio</h1>
             </div>
             <div class="c-tab">
-                <button class="c-tab__button" data-all>Wszystkie</button>
+                <button class="c-tab__button is-active" data-all>Wszystkie</button>
                 <button class="c-tab__button" data-sites>Strony</button>
                 <button class="c-tab__button" data-apps>Aplikacje</button>
             </div>
@@ -218,22 +221,23 @@
             </button>
         </footer>
     </div>
-
-
     <script src="/assets/scripts/menu.js"></script>
     <script src="/assets/scripts/gototop.js"></script>
     <script src="/assets/scripts/tabs.js"></script>
+    <script src="/assets/scripts/loader.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script>
         const menu = new Menu();
         menu.initialize();
         const up = new Gototop();
+        up.initialize();
         const tabs = new Tabs();
         tabs.initialize();
-        up.initialize();
         var rellax = new Rellax('.rellax', {
             breakpoints: [576, 800, 1201]
         });
+        const loader = new Loader();
+        loader.initialize();
     </script>
 </body>
 

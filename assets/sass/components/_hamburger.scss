@@ -25,12 +25,12 @@
 }
 
 .c-hamburger__bars {
+    @include transition(width margin-left, .1s .1s, ease-in, 0s);
+
     position: absolute;
 
     width: 1.25rem;
     height: .2rem;
-
-    @include transition(width margin-left, .1s .1s, ease-in, 0s);
 
     background: $color-white;
 

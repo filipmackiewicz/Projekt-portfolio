@@ -1,9 +1,10 @@
 .c-experience-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     margin-top: 5rem;
     margin-bottom: 5rem;
-    
 }

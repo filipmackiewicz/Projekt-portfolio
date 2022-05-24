@@ -1,0 +1,124 @@
+.c-contact {
+    margin-top: 5rem;
+
+    @include media (tablet) {
+        flex-basis: 50%;
+    }
+
+    flex-basis: 100%;
+}
+
+.c-contact__title {
+    padding-bottom: 4rem;
+
+    font-family: $font-family-bold;
+    font-size: 3.4rem;
+
+    color: $color-white;
+}
+
+.c-contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-contact-form__input {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+
+    font-family: $font-family-regular;
+    font-size: 1.6rem;
+
+    color: $color-white;
+    border: none;
+    border-bottom: solid .1rem $color-gray;
+    background: transparent;
+}
+
+.c-contact-form__input:focus,
+.c-contact-form__input:active,
+.c-contact-form__input:focus-within,
+.c-contact-form__input:visited,
+.c-contact-form__input:focus-visible {
+    font-family: $font-family-regular;
+
+    border: none;
+    border-bottom: solid .1rem $color-gray;
+    outline: none;
+}
+
+.c-contact-form__textarea {
+    min-height: 24rem;
+    margin-bottom: 2rem;
+
+    font-family: $font-family-regular;
+    font-size: 1.6rem;
+
+    resize: vertical;
+
+    color: $color-white;
+    border: none;
+    border-bottom: solid .1rem $color-gray;
+    background: transparent;
+}
+
+.c-contact-form__textarea:focus,
+.c-contact-form__textarea:active,
+.c-contact-form__textarea:focus-within,
+.c-contact-form__textarea:visited,
+.c-contact-form__textarea:focus-visible {
+    border: none;
+    border-bottom: solid .1rem $color-gray;
+    outline: none;
+}
+
+.c-contact-form__label {
+    margin-bottom: 2rem;
+
+    font-family: $font-family-light;
+    font-size: 1.3rem;
+
+    color: $color-gray;
+}
+
+.c-contact-form-label__input {
+    margin-right: 1rem;
+}
+
+.c-contact-form__button-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.c-contact-form-button-box__button {
+    @include transition(color background-position, .3s .3s, ease-in, 0s);
+
+    margin-top: 2rem;
+    padding: .5rem;
+
+    font-family: $font-family-regular;
+
+    cursor: pointer;
+
+    color: $color-red;
+    border: none;
+    border-bottom: solid .1rem $color-red;
+    background: transparent;
+    background-image: linear-gradient(to top, $color-red 50%, $color-blue-dark 50%);
+    background-size: 100% 200%;
+}
+
+.c-contact-form-button-box-button__icon {
+    @include transition(color, .3s, ease-in, 0s);
+
+    margin-left: .5rem;
+}
+
+.c-contact-form-button-box__button:hover,
+.c-contact-form-button-box__button:hover .c-contact-form-button-box-button__icon {
+    color: $color-white;
+}
+
+.c-contact-form-button-box__button:hover {
+    background-position: 0 100%;
+}

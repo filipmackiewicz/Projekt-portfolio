@@ -46,11 +46,11 @@
 }
 
 .c-menu-list__word {
+    @include transition(transform, .3s, ease-in, 0s);
+
     position: relative;
 
     display: inline-block;
-
-    @include transition(transform, .3s, ease-in, 0s);
 
     color: $color-white;
 
