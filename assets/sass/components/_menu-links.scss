@@ -1,18 +1,25 @@
 .c-menu-links {
-    @include transition(left, .2s, ease-in, 0s);
+    @include transition(left, .5s, ease-in-out, 0s);
 
     position: absolute;
     z-index: 1;
     top: 0;
     left: 100%;
 
+    display: none;
+
     height: 100vh;
 
     background: $color-blue;
+    @include media (desktop-small) {
+        display: block;
+    }
 }
 
 .c-menu-links.is-visible {
     left: 0;
+
+    display: block;
 
     @include media (smartphone-large) {
         left: calc(100% - 40rem);

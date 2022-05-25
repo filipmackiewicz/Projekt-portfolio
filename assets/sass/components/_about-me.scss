@@ -1,4 +1,3 @@
-
 .c-about-me {
     position: relative;
 
@@ -6,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
 
-    padding-top: 3rem;
+    padding-top: 7rem;
 
     @include media (tablet-large) {
         margin-top: 0;

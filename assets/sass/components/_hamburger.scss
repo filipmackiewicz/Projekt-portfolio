@@ -63,6 +63,24 @@
     }
 }
 
+.c-hamburger__bars.animate {
+    background: rgba(255, 255, 255, 0);
+
+    &::after {
+        top: 0;
+
+        transition: top 300ms cubic-bezier(.23, 1, .32, 1), transform 300ms 300ms cubic-bezier(.23, 1, .32, 1);
+        transform: rotate(45deg);
+    }
+
+    &::before {
+        bottom: 0;
+
+        transition: bottom 300ms cubic-bezier(.23, 1, .32, 1), transform 300ms 300ms cubic-bezier(.23, 1, .32, 1);
+        transform: rotate(-45deg);
+    }
+}
+
 .c-hamburger:hover .c-hamburger__bars {
     width: 2rem;
     margin-left: -.75rem;
