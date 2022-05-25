@@ -26,213 +26,226 @@
         <p class="c-preloader__text" data-loadertext>0</p>
     </div>
     <div class="l-page-container-no-bg">
-        <header class="l-header" id="header">
-            <nav class="c-menu">
-                <div class="c-header">
-                    <a href="/" class="c-header__logo">
-                    </a>
-                    <div class="c-header__hamburger">
-                        <button class="c-hamburger" data-menu>
-                            <span class="c-hamburger__bars" data-bars></span>
-                            <span class="c-hamburger__text">Menu</span>
-                        </button>
+        <div class="l-container">
+            <header class="l-header" id="header">
+                <nav class="c-menu">
+                    <div class="c-header">
+                        <a href="/" class="c-header__logo">
+                        </a>
+                        <div class="c-header__hamburger">
+                            <button class="c-hamburger" data-menu>
+                                <span class="c-hamburger__bars" data-bars></span>
+                                <span class="c-hamburger__text">Menu</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="c-menu-links" data-links>
+                        <ul class="c-menu-list">
+                            <li class="c-menu-list__item">
+                                <a href="../#about-me" class="c-menu-list__link" data-link>
+                                    <span class="c-menu-list__title">
+                                        <span class="c-menu-list__word" data-hover="O mnie">
+                                            O mnie
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="c-menu-list__item">
+                                <a href="../#skills" class="c-menu-list__link" data-link>
+                                    <span class="c-menu-list__title">
+                                        <span class="c-menu-list__word" data-hover="Umiejętności">
+                                            Umiejętności
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="c-menu-list__item">
+                                <a href="/experience" class="c-menu-list__link" data-link>
+                                    <span class="c-menu-list__title">
+                                        <span class="c-menu-list__word" data-hover="Doświadczenie">
+                                            Doświadczenie
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="c-menu-list__item">
+                                <a href="/portfolio" class="c-menu-list__link">
+                                    <span class="c-menu-list__title">
+                                        <span class="c-menu-list__word" data-hover="Portfolio">
+                                            Portfolio
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="c-menu-list__item">
+                                <a href="/kontakt" class="c-menu-list__link">
+                                    <span class="c-menu-list__title">
+                                        <span class="c-menu-list__word" data-hover="Kontakt">
+                                            Kontakt
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="l-container">
+            <section class="l-projects">
+                <div class="c-title">
+                    <h1 class="c-title__title">Portfolio</h1>
+                </div>
+                <div class="c-tab">
+                    <button class="c-tab__button is-active" data-all>Wszystkie</button>
+                    <button class="c-tab__button" data-sites>Strony</button>
+                    <button class="c-tab__button" data-apps>Aplikacje</button>
+                </div>
+                <div class="c-projects">
+                    <div class="c-projects-col rellax" data-rellax-speed="4" data-rellax-xs-speed="1"
+                        data-rellax-mobile-speed="1">
+                        <div class="c-projects-item" data-site data-item>
+                            <h2 class="c-projects-item__title">Restauracja</h2>
+                            <p class="c-projects-item__description">Strona stworzona przy pomocy metodologii BEM,
+                                preprocesora Sass</p>
+                            <img class="c-projects-item__image" src="/assets/img/marysienka-old-site.png"
+                                alt="Screenschot - marysienka stara strona">
+                            <div class="c-projects-item-links">
+                                <a href="https://github.com/filipmackiewicz/marysienka"
+                                    class="c-projects-item-links__link" target="_blank">Kod<i
+                                        class="c-projects-item-links-link__icon icon-github-circular"></i></a>
+                                <a href="https://obiadymarsyienka.netlify.app/" class="c-projects-item-links__link"
+                                    target="_blank">Projekt<i
+                                        class="c-projects-item-links-link__icon icon-code"></i></a>
+                            </div>
+                        </div>
+                        <div class="c-projects-item" data-site data-item>
+                            <h2 class="c-projects-item__title">Marysieńka - obiady</h2>
+                            <p class="c-projects-item__description">Strona bufetu politechniki białostockiej oferującego
+                                catering. Oparta o CMS WordPress, budowana na podstawowym
+                                szablonie </p>
+                            <img class="c-projects-item__image" src="/assets/img/marysienka-site.png"
+                                alt="Screenschot - marysienka">
+                            <div class="c-projects-item-links">
+                                <a href="https://www.obiady-marysienka.pl/" class="c-projects-item-links__link"
+                                    target="_blank">Projekt<i
+                                        class="c-projects-item-links-link__icon icon-code"></i></a>
+                            </div>
+                        </div>
+                        <div class="c-projects-item" data-app data-item>
+                            <h2 class="c-projects-item__title">Weather app</h2>
+                            <p class="c-projects-item__description">Aplikacja pogodowa wykorzystująca API. Zbudowana
+                                przy
+                                pomocy metdologi BEM, preprocesora Sass oraz obiektowego JS</p>
+                            <img class="c-projects-item__image" src="/assets/img/weather-app.png"
+                                alt="Screenschot - aplikacja pogodowa">
+                            <div class="c-projects-item-links">
+                                <a href="https://github.com/filipmackiewicz/WeatherApp"
+                                    class="c-projects-item-links__link" target="_blank">Kod<i
+                                        class="c-projects-item-links-link__icon icon-github-circular"></i></a>
+                                <a href="https://weather.filipmackiewicz.pl/" class="c-projects-item-links__link"
+                                    target="_blank">Projekt<i
+                                        class="c-projects-item-links-link__icon icon-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-projects-col rellax" data-rellax-speed="-1" data-rellax-xs-speed="1"
+                        data-rellax-mobile-speed="1">
+                        <div class="c-projects-item" data-site data-item>
+                            <h2 class="c-projects-item__title">Filip Mackiewicz - portfolio</h2>
+                            <p class="c-projects-item__description">Portfolio stworzone na własne potrzeby przy użyciu
+                                metodologii BEM, preprocesora Sass oraz obiektowego Js</p>
+                            <img class="c-projects-item__image" src="/assets/img/portfolio-site.jpg"
+                                alt="Screenschot - Filip Mackiewicz portfolio">
+                            <div class="c-projects-item-links">
+                                <a href="https://github.com/filipmackiewicz/Portfolio---projekt---new"
+                                    class="c-projects-item-links__link" target="_blank">Kod<i
+                                        class="c-projects-item-links-link__icon icon-github-circular"></i></a>
+                                <a href="https://filipmackiewicz.pl/" class="c-projects-item-links__link"
+                                    target="_blank">Projekt<i
+                                        class="c-projects-item-links-link__icon icon-code"></i></a>
+                            </div>
+                        </div>
+                        <div class="c-projects-item" data-app data-item>
+                            <h2 class="c-projects-item__title">Quiz app</h2>
+                            <p class="c-projects-item__description">Prosta aplikacja napisana na własne potrzeby w
+                                celach
+                                nauki przy użyciu html, css, js</p>
+                            <img class="c-projects-item__image" src="/assets/img/quiz-app.png"
+                                alt="Screenschot - quiz app">
+                            <div class="c-projects-item-links">
+                                <a href="https://github.com/filipmackiewicz/Javascript-Quiz"
+                                    class="c-projects-item-links__link" target="_blank">Kod<i
+                                        class="c-projects-item-links-link__icon icon-github-circular"></i></a>
+                                <a href="https://quizproj.netlify.app/" class="c-projects-item-links__link"
+                                    target="_blank">Projekt<i
+                                        class="c-projects-item-links-link__icon icon-code"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-projects-col rellax" data-rellax-speed="4" data-rellax-xs-speed="1"
+                        data-rellax-mobile-speed="1">
+                        <div class="c-projects-item" data-site data-item>
+                            <h2 class="c-projects-item__title">Portfolio</h2>
+                            <p class="c-projects-item__description">Stary projekt portfolio stworzona przy pomocy
+                                metodologii BEM,
+                                preprocesora Sass</p>
+                            <img class="c-projects-item__image" src="/assets/img/old-portfolio.png"
+                                alt="Screenschot - portfolio mackiewicz">
+                            <div class="c-projects-item-links">
+                                <a href="https://github.com/filipmackiewicz/Portfolio-old"
+                                    class="c-projects-item-links__link" target="_blank">Kod<i
+                                        class="c-projects-item-links-link__icon icon-github-circular"></i></a>
+                                <a href="https://old.filipmackiewicz.pl/" class="c-projects-item-links__link"
+                                    target="_blank">Projekt<i
+                                        class="c-projects-item-links-link__icon icon-code"></i></a>
+                            </div>
+                        </div>
+                        <div class="c-projects-item" data-site data-item>
+                            <h2 class="c-projects-item__title">Krystian Zdrojewski - trener</h2>
+                            <p class="c-projects-item__description">Strona trenera personalnego Krystiana Zdrojewskiego,
+                                oparta na CMS Wordpress - budowana na podstawowym szablonie</p>
+                            <img class="c-projects-item__image" src="/assets/img/krystian-site.png"
+                                alt="Screenschot - krystian zdrojewski">
+                            <div class="c-projects-item-links">
+                                <a href="https://krystianzdrojewski.pl/" class="c-projects-item-links__link"
+                                    target="_blank">Projekt<i
+                                        class="c-projects-item-links-link__icon icon-code"></i></a>
+                            </div>
+                        </div>
+                        <div class="c-projects-item" data-app data-item>
+                            <h2 class="c-projects-item__title">W trakcie realizacji... Generator zgód e-commerce</h2>
+                            <p class="c-projects-item__description">Aplikacja generująca zgody e-commerce gotowe do
+                                wrzucenia z tagami HTML oraz z opcją pobrania w formacie DOC.</p>
+                            <img class="c-projects-item__image" src="/assets/img/generator-site.png"
+                                alt="Screenschot - generator">
+                        </div>
                     </div>
                 </div>
-
-                <div class="c-menu-links" data-links>
-                    <ul class="c-menu-list">
-                        <li class="c-menu-list__item">
-                            <a href="../#about-me" class="c-menu-list__link" data-link>
-                                <span class="c-menu-list__title">
-                                    <span class="c-menu-list__word" data-hover="O mnie">
-                                        O mnie
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="c-menu-list__item">
-                            <a href="../#skills" class="c-menu-list__link" data-link>
-                                <span class="c-menu-list__title">
-                                    <span class="c-menu-list__word" data-hover="Umiejętności">
-                                        Umiejętności
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="c-menu-list__item">
-                            <a href="/experience" class="c-menu-list__link" data-link>
-                                <span class="c-menu-list__title">
-                                    <span class="c-menu-list__word" data-hover="Doświadczenie">
-                                        Doświadczenie
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="c-menu-list__item">
-                            <a href="/portfolio" class="c-menu-list__link">
-                                <span class="c-menu-list__title">
-                                    <span class="c-menu-list__word" data-hover="Portfolio">
-                                        Portfolio
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="c-menu-list__item">
-                            <a href="/kontakt" class="c-menu-list__link">
-                                <span class="c-menu-list__title">
-                                    <span class="c-menu-list__word" data-hover="Kontakt">
-                                        Kontakt
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
+            </section>
+            <footer class="l-footer">
+                <div class="c-footer-watermark">
+                    <p class="c-footer-watermark__text">
+                        © FM 2022
+                    </p>
                 </div>
-            </nav>
-        </header>
-        <section class="l-projects">
-            <div class="c-title">
-                <h1 class="c-title__title">Portfolio</h1>
-            </div>
-            <div class="c-tab">
-                <button class="c-tab__button is-active" data-all>Wszystkie</button>
-                <button class="c-tab__button" data-sites>Strony</button>
-                <button class="c-tab__button" data-apps>Aplikacje</button>
-            </div>
-            <div class="c-projects">
-                <div class="c-projects-col rellax" data-rellax-speed="4" data-rellax-xs-speed="1"
-                    data-rellax-mobile-speed="1">
-                    <div class="c-projects-item" data-site data-item>
-                        <h2 class="c-projects-item__title">Restauracja</h2>
-                        <p class="c-projects-item__description">Strona stworzona przy pomocy metodologii BEM,
-                            preprocesora Sass</p>
-                        <img class="c-projects-item__image" src="/assets/img/marysienka-old-site.png"
-                            alt="Screenschot - marysienka stara strona">
-                        <div class="c-projects-item-links">
-                            <a href="https://github.com/filipmackiewicz/marysienka" class="c-projects-item-links__link"
-                                target="_blank">Kod<i
-                                    class="c-projects-item-links-link__icon icon-github-circular"></i></a>
-                            <a href="https://obiadymarsyienka.netlify.app/" class="c-projects-item-links__link"
-                                target="_blank">Projekt<i class="c-projects-item-links-link__icon icon-code"></i></a>
-                        </div>
-                    </div>
-                    <div class="c-projects-item" data-site data-item>
-                        <h2 class="c-projects-item__title">Marysieńka - obiady</h2>
-                        <p class="c-projects-item__description">Strona bufetu politechniki białostockiej oferującego
-                            catering. Oparta o CMS WordPress, budowana na podstawowym
-                            szablonie </p>
-                        <img class="c-projects-item__image" src="/assets/img/marysienka-site.png"
-                            alt="Screenschot - marysienka">
-                        <div class="c-projects-item-links">
-                            <a href="https://www.obiady-marysienka.pl/" class="c-projects-item-links__link"
-                                target="_blank">Projekt<i class="c-projects-item-links-link__icon icon-code"></i></a>
-                        </div>
-                    </div>
-                    <div class="c-projects-item" data-app data-item>
-                        <h2 class="c-projects-item__title">Weather app</h2>
-                        <p class="c-projects-item__description">Aplikacja pogodowa wykorzystująca API. Zbudowana przy
-                            pomocy metdologi BEM, preprocesora Sass oraz obiektowego JS</p>
-                        <img class="c-projects-item__image" src="/assets/img/weather-app.png"
-                            alt="Screenschot - aplikacja pogodowa">
-                        <div class="c-projects-item-links">
-                            <a href="https://github.com/filipmackiewicz/WeatherApp" class="c-projects-item-links__link"
-                                target="_blank">Kod<i
-                                    class="c-projects-item-links-link__icon icon-github-circular"></i></a>
-                            <a href="https://weather.filipmackiewicz.pl/" class="c-projects-item-links__link"
-                                target="_blank">Projekt<i class="c-projects-item-links-link__icon icon-code"></i></a>
-                        </div>
-                    </div>
+                <div class="c-footer-socials">
+                    <a href="https://github.com/filipmackiewicz" target="_blank" rel="nofollow"
+                        class="c-footer-socials__item icon-github-circular"></a>
+                    <a href="https://twitter.com/fjelap" target="_blank" rel="nofollow"
+                        class="c-footer-socials__item icon-twitter-circular"></a>
+                    <a href="https://www.linkedin.com/in/filip-mackiewicz/" target="_blank" rel="nofollow"
+                        class="c-footer-socials__item icon-linkedin-circular"></a>
+                    <a href="https://www.facebook.com/filip.mackiewicz.3" target="_blank" rel="nofollow"
+                        class="c-footer-socials__item icon-facebook-circular"></a>
                 </div>
-                <div class="c-projects-col rellax" data-rellax-speed="-1" data-rellax-xs-speed="1"
-                    data-rellax-mobile-speed="1">
-                    <div class="c-projects-item" data-site data-item>
-                        <h2 class="c-projects-item__title">Filip Mackiewicz - portfolio</h2>
-                        <p class="c-projects-item__description">Portfolio stworzone na własne potrzeby przy użyciu
-                            metodologii BEM, preprocesora Sass oraz obiektowego Js</p>
-                        <img class="c-projects-item__image" src="/assets/img/portfolio-site.jpg"
-                            alt="Screenschot - Filip Mackiewicz portfolio">
-                        <div class="c-projects-item-links">
-                            <a href="https://github.com/filipmackiewicz/Portfolio---projekt---new"
-                                class="c-projects-item-links__link" target="_blank">Kod<i
-                                    class="c-projects-item-links-link__icon icon-github-circular"></i></a>
-                            <a href="https://filipmackiewicz.pl/" class="c-projects-item-links__link"
-                                target="_blank">Projekt<i class="c-projects-item-links-link__icon icon-code"></i></a>
-                        </div>
-                    </div>
-                    <div class="c-projects-item" data-app data-item>
-                        <h2 class="c-projects-item__title">Quiz app</h2>
-                        <p class="c-projects-item__description">Prosta aplikacja napisana na własne potrzeby w celach
-                            nauki przy użyciu html, css, js</p>
-                        <img class="c-projects-item__image" src="/assets/img/quiz-app.png" alt="Screenschot - quiz app">
-                        <div class="c-projects-item-links">
-                            <a href="https://github.com/filipmackiewicz/Javascript-Quiz"
-                                class="c-projects-item-links__link" target="_blank">Kod<i
-                                    class="c-projects-item-links-link__icon icon-github-circular"></i></a>
-                            <a href="https://quizproj.netlify.app/" class="c-projects-item-links__link"
-                                target="_blank">Projekt<i class="c-projects-item-links-link__icon icon-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="c-projects-col rellax" data-rellax-speed="4" data-rellax-xs-speed="1"
-                    data-rellax-mobile-speed="1">
-                    <div class="c-projects-item" data-site data-item>
-                        <h2 class="c-projects-item__title">Portfolio</h2>
-                        <p class="c-projects-item__description">Stary projekt portfolio stworzona przy pomocy
-                            metodologii BEM,
-                            preprocesora Sass</p>
-                        <img class="c-projects-item__image" src="/assets/img/old-portfolio.png"
-                            alt="Screenschot - portfolio mackiewicz">
-                        <div class="c-projects-item-links">
-                            <a href="https://github.com/filipmackiewicz/Portfolio-old"
-                                class="c-projects-item-links__link" target="_blank">Kod<i
-                                    class="c-projects-item-links-link__icon icon-github-circular"></i></a>
-                            <a href="https://old.filipmackiewicz.pl/" class="c-projects-item-links__link"
-                                target="_blank">Projekt<i class="c-projects-item-links-link__icon icon-code"></i></a>
-                        </div>
-                    </div>
-                    <div class="c-projects-item" data-site data-item>
-                        <h2 class="c-projects-item__title">Krystian Zdrojewski - trener</h2>
-                        <p class="c-projects-item__description">Strona trenera personalnego Krystiana Zdrojewskiego,
-                            oparta na CMS Wordpress - budowana na podstawowym szablonie</p>
-                        <img class="c-projects-item__image" src="/assets/img/krystian-site.png"
-                            alt="Screenschot - krystian zdrojewski">
-                        <div class="c-projects-item-links">
-                            <a href="https://krystianzdrojewski.pl/" class="c-projects-item-links__link"
-                                target="_blank">Projekt<i class="c-projects-item-links-link__icon icon-code"></i></a>
-                        </div>
-                    </div>
-                    <div class="c-projects-item" data-app data-item>
-                        <h2 class="c-projects-item__title">W trakcie realizacji... Generator zgód e-commerce</h2>
-                        <p class="c-projects-item__description">Aplikacja generująca zgody e-commerce gotowe do
-                            wrzucenia z tagami HTML oraz z opcją pobrania w formacie DOC.</p>
-                        <img class="c-projects-item__image" src="/assets/img/generator-site.png"
-                            alt="Screenschot - generator">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="l-footer">
-            <div class="c-footer-watermark">
-                <p class="c-footer-watermark__text">
-                    © FM 2022
-                </p>
-            </div>
-            <div class="c-footer-socials">
-                <a href="https://github.com/filipmackiewicz" target="_blank" rel="nofollow"
-                    class="c-footer-socials__item icon-github-circular"></a>
-                <a href="https://twitter.com/fjelap" target="_blank" rel="nofollow"
-                    class="c-footer-socials__item icon-twitter-circular"></a>
-                <a href="https://www.linkedin.com/in/filip-mackiewicz/" target="_blank" rel="nofollow"
-                    class="c-footer-socials__item icon-linkedin-circular"></a>
-                <a href="https://www.facebook.com/filip.mackiewicz.3" target="_blank" rel="nofollow"
-                    class="c-footer-socials__item icon-facebook-circular"></a>
-            </div>
-            <button class="c-footer-go-to-up" data-gototop>
-                <p class="c-footer-go-to-up__text">
-                    Na początek<i class="c-footer-go-to-up-text__icon icon-arrow-top"></i>
-                </p>
-            </button>
-        </footer>
+                <button class="c-footer-go-to-up" data-gototop>
+                    <p class="c-footer-go-to-up__text">
+                        Na początek<i class="c-footer-go-to-up-text__icon icon-arrow-top"></i>
+                    </p>
+                </button>
+            </footer>
+        </div>
     </div>
     <script src="/assets/scripts/menu.js"></script>
     <script src="/assets/scripts/gototop.js"></script>
